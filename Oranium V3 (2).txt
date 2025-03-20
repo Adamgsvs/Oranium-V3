@@ -1857,7 +1857,6 @@ UI["109"]["AspectRatio"] = 1.11765
 
 -- // StarterGui.ScreenGui.Frame.console1 \\ --
 UI["10a"] = Instance.new("Frame", UI["2"])
-UI["10a"]["Visible"] = false
 UI["10a"]["ZIndex"] = 3
 UI["10a"]["BorderSizePixel"] = 0
 UI["10a"]["BackgroundColor3"] = Color3.fromRGB(5, 14, 23)
@@ -3874,21 +3873,11 @@ local function SCRIPT_10d()
 		end
 	end)
 
-	-- تسجيل تحريك الأجزاء (Doors, Motors)
-	game.Workspace.DescendantAdded:Connect(function(descendant)
-		if descendant:IsA("HingeConstraint") or descendant:IsA("Motor") then
-			logMessage("🔄 [MOTION] " .. (descendant.Parent and descendant.Parent.Name or "Unknown") .. " is moving.")
-		end
-	end)
 
 	-- تسجيل أوامر الإداريين وأوامر print()
 	game:GetService("LogService").MessageOut:Connect(function(message, messageType)
 		if messageType == Enum.MessageType.MessageOutput then
 			logMessage("📜 [LOG] " .. message)
-		elseif messageType == Enum.MessageType.MessageWarning then
-			logMessage("⚠️ [WARNING] " .. message)
-		elseif messageType == Enum.MessageType.MessageError then
-			logMessage("❌ [ERROR] " .. message)
 		end
 	end)
 
