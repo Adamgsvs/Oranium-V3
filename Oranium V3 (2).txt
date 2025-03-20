@@ -1,6 +1,6 @@
 -- // GUI TO LUA \\ --
 
--- // INSTANCES: 284 | SCRIPTS: 84 | MODULES: 0 \\ --
+-- // INSTANCES: 285 | SCRIPTS: 85 | MODULES: 0 \\ --
 
 local UI = {}
 
@@ -724,7 +724,6 @@ UI["5f"]["Name"] = [[execute button]]
 
 -- // StarterGui.ScreenGui.Frame.editor11.editor \\ --
 UI["60"] = Instance.new("TextBox", UI["4d"])
-UI["60"]["CursorPosition"] = -1
 UI["60"]["TextColor3"] = Color3.fromRGB(250, 250, 250)
 UI["60"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255)
 UI["60"]["ZIndex"] = 3
@@ -1882,7 +1881,6 @@ UI["10b"]["BackgroundTransparency"] = 1
 
 -- // StarterGui.ScreenGui.Frame.console1.ScrollingFrame.consele \\ --
 UI["10c"] = Instance.new("TextBox", UI["10b"])
-UI["10c"]["CursorPosition"] = -1
 UI["10c"]["TextColor3"] = Color3.fromRGB(128, 128, 128)
 UI["10c"]["ZIndex"] = 3
 UI["10c"]["BorderSizePixel"] = 0
@@ -1902,87 +1900,91 @@ UI["10c"]["BackgroundTransparency"] = 1
 UI["10d"] = Instance.new("LocalScript", UI["10c"])
 
 
+-- // StarterGui.ScreenGui.Frame.console1.ScrollingFrame.consele.LocalScript \\ --
+UI["10e"] = Instance.new("LocalScript", UI["10c"])
+
+
 -- // StarterGui.ScreenGui.Frame.console1.ScrollingFrame.UIStroke \\ --
-UI["10e"] = Instance.new("UIStroke", UI["10b"])
-UI["10e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-UI["10e"]["Color"] = Color3.fromRGB(35, 35, 35)
+UI["10f"] = Instance.new("UIStroke", UI["10b"])
+UI["10f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["10f"]["Color"] = Color3.fromRGB(35, 35, 35)
 
 -- // StarterGui.ScreenGui.Frame.console1.exit frame \\ --
-UI["10f"] = Instance.new("ImageButton", UI["10a"])
-UI["10f"]["BorderSizePixel"] = 0
-UI["10f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["10f"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
-UI["10f"]["ZIndex"] = 4
-UI["10f"]["Image"] = [[rbxassetid://101553750173584]]
-UI["10f"]["Size"] = UDim2.new(0.05504, 0, 0.11111, 0)
-UI["10f"]["BackgroundTransparency"] = 1
-UI["10f"]["Name"] = [[exit frame]]
-UI["10f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["10f"]["Position"] = UDim2.new(0.78426, 0, -0.21884, 0)
+UI["110"] = Instance.new("ImageButton", UI["10a"])
+UI["110"]["BorderSizePixel"] = 0
+UI["110"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["110"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["110"]["ZIndex"] = 4
+UI["110"]["Image"] = [[rbxassetid://101553750173584]]
+UI["110"]["Size"] = UDim2.new(0.05504, 0, 0.11111, 0)
+UI["110"]["BackgroundTransparency"] = 1
+UI["110"]["Name"] = [[exit frame]]
+UI["110"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["110"]["Position"] = UDim2.new(0.78426, 0, -0.21884, 0)
 
 -- // StarterGui.ScreenGui.Frame.console1.exit frame.UIAspectRatioConstraint \\ --
-UI["110"] = Instance.new("UIAspectRatioConstraint", UI["10f"])
+UI["111"] = Instance.new("UIAspectRatioConstraint", UI["110"])
 
 
 -- // StarterGui.ScreenGui.Frame.console1.exit frame.LocalScript \\ --
-UI["111"] = Instance.new("LocalScript", UI["10f"])
+UI["112"] = Instance.new("LocalScript", UI["110"])
 
 
 -- // StarterGui.ScreenGui.Frame.console1.exit frame.LocalScript \\ --
-UI["112"] = Instance.new("LocalScript", UI["10f"])
+UI["113"] = Instance.new("LocalScript", UI["110"])
 
 
 -- // StarterGui.ScreenGui.Frame.console1.UIAspectRatioConstraint \\ --
-UI["113"] = Instance.new("UIAspectRatioConstraint", UI["10a"])
-UI["113"]["AspectRatio"] = 2.01891
+UI["114"] = Instance.new("UIAspectRatioConstraint", UI["10a"])
+UI["114"]["AspectRatio"] = 2.01891
 
 -- // StarterGui.ScreenGui.Frame.UIAspectRatioConstraint \\ --
-UI["114"] = Instance.new("UIAspectRatioConstraint", UI["2"])
-UI["114"]["AspectRatio"] = 1.90708
+UI["115"] = Instance.new("UIAspectRatioConstraint", UI["2"])
+UI["115"]["AspectRatio"] = 1.90708
 
 -- // StarterGui.ScreenGui.LocalScript \\ --
-UI["115"] = Instance.new("LocalScript", UI["1"])
+UI["116"] = Instance.new("LocalScript", UI["1"])
 
 
 -- // StarterGui.ScreenGui.toggle \\ --
-UI["116"] = Instance.new("ImageButton", UI["1"])
-UI["116"]["BorderSizePixel"] = 0
-UI["116"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["116"]["Image"] = [[rbxassetid://89473454828644]]
-UI["116"]["Size"] = UDim2.new(0, 64, 0, 64)
-UI["116"]["Name"] = [[toggle]]
-UI["116"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["116"]["Position"] = UDim2.new(0.06737, 0, 0.11258, 0)
-
--- // StarterGui.ScreenGui.toggle.glow \\ --
-UI["117"] = Instance.new("ImageLabel", UI["116"])
+UI["117"] = Instance.new("ImageButton", UI["1"])
 UI["117"]["BorderSizePixel"] = 0
 UI["117"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["117"]["Image"] = [[rbxassetid://95152304299407]]
+UI["117"]["Image"] = [[rbxassetid://89473454828644]]
 UI["117"]["Size"] = UDim2.new(0, 64, 0, 64)
+UI["117"]["Name"] = [[toggle]]
 UI["117"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["117"]["BackgroundTransparency"] = 1
-UI["117"]["Name"] = [[glow]]
-UI["117"]["Position"] = UDim2.new(-0.01137, 0, -0.0025, 0)
+UI["117"]["Position"] = UDim2.new(0.06737, 0, 0.11258, 0)
+
+-- // StarterGui.ScreenGui.toggle.glow \\ --
+UI["118"] = Instance.new("ImageLabel", UI["117"])
+UI["118"]["BorderSizePixel"] = 0
+UI["118"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["118"]["Image"] = [[rbxassetid://95152304299407]]
+UI["118"]["Size"] = UDim2.new(0, 64, 0, 64)
+UI["118"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["118"]["BackgroundTransparency"] = 1
+UI["118"]["Name"] = [[glow]]
+UI["118"]["Position"] = UDim2.new(-0.01137, 0, -0.0025, 0)
 
 -- // StarterGui.ScreenGui.toggle.glow.UICorner \\ --
-UI["118"] = Instance.new("UICorner", UI["117"])
-UI["118"]["CornerRadius"] = UDim.new(0, 40)
+UI["119"] = Instance.new("UICorner", UI["118"])
+UI["119"]["CornerRadius"] = UDim.new(0, 40)
 
 -- // StarterGui.ScreenGui.toggle.LocalScript \\ --
-UI["119"] = Instance.new("LocalScript", UI["116"])
+UI["11a"] = Instance.new("LocalScript", UI["117"])
 
 
 -- // StarterGui.ScreenGui.toggle.UICorner \\ --
-UI["11a"] = Instance.new("UICorner", UI["116"])
-UI["11a"]["CornerRadius"] = UDim.new(0, 50)
+UI["11b"] = Instance.new("UICorner", UI["117"])
+UI["11b"]["CornerRadius"] = UDim.new(0, 50)
 
 -- // StarterGui.ScreenGui.toggle.LocalScript \\ --
-UI["11b"] = Instance.new("LocalScript", UI["116"])
+UI["11c"] = Instance.new("LocalScript", UI["117"])
 
 
 -- // StarterGui.ScreenGui.toggle.LocalScript \\ --
-UI["11c"] = Instance.new("LocalScript", UI["116"])
+UI["11d"] = Instance.new("LocalScript", UI["117"])
 
 
 -- // StarterGui.ScreenGui.Frame.Frame.TextLabel.LocalScript \\ --
@@ -3885,9 +3887,21 @@ local function SCRIPT_10d()
 
 end
 task.spawn(SCRIPT_10d)
+-- // StarterGui.ScreenGui.Frame.console1.ScrollingFrame.consele.LocalScript \\ --
+local function SCRIPT_10e()
+	local script = UI["10e"]
+	local textBox = script.Parent  -- تأكد من أن السكربت في داخل TextBox
+
+	-- تعطيل الكتابة من اللاعب
+	textBox.ClearTextOnFocus = false
+	textBox.TextEditable = false  -- تعطل الكتابة في الـ TextBox
+
+
+end
+task.spawn(SCRIPT_10e)
 -- // StarterGui.ScreenGui.Frame.console1.exit frame.LocalScript \\ --
-local function SCRIPT_111()
-	local script = UI["111"]
+local function SCRIPT_112()
+	local script = UI["112"]
 	local imageButton = script.Parent  -- تحديد الـ ImageButton
 	local originalColor = imageButton.ImageColor3  -- حفظ اللون الأصلي للصورة
 
@@ -3904,20 +3918,20 @@ local function SCRIPT_111()
 	end)
 
 end
-task.spawn(SCRIPT_111)
+task.spawn(SCRIPT_112)
 -- // StarterGui.ScreenGui.Frame.console1.exit frame.LocalScript \\ --
-local function SCRIPT_112()
-	local script = UI["112"]
+local function SCRIPT_113()
+	local script = UI["113"]
 	local Frame = script.Parent.Parent
 
 	script.Parent.MouseButton1Click:Connect(function()
 		Frame.Visible = false
 	end)
 end
-task.spawn(SCRIPT_112)
+task.spawn(SCRIPT_113)
 -- // StarterGui.ScreenGui.LocalScript \\ --
-local function SCRIPT_115()
-	local script = UI["115"]
+local function SCRIPT_116()
+	local script = UI["116"]
 	local screenGui = script.Parent -- تأكد أن هذا السكربت داخل الـ ScreenGui
 	local toggleKey = Enum.KeyCode.K -- المفتاح الذي ستضغط عليه للتبديل بين الظهور والاختفاء
 
@@ -3935,10 +3949,10 @@ local function SCRIPT_115()
 	end)
 
 end
-task.spawn(SCRIPT_115)
+task.spawn(SCRIPT_116)
 -- // StarterGui.ScreenGui.toggle.LocalScript \\ --
-local function SCRIPT_119()
-	local script = UI["119"]
+local function SCRIPT_11a()
+	local script = UI["11a"]
 	local imageButton = script.Parent  -- تحديد الـ ImageButton
 	local originalColor = imageButton.ImageColor3  -- حفظ اللون الأصلي للصورة
 	local glowImage = imageButton:FindFirstChild("glow")  -- البحث عن عنصر الصورة glow
@@ -3971,10 +3985,10 @@ local function SCRIPT_119()
 	end)
 
 end
-task.spawn(SCRIPT_119)
+task.spawn(SCRIPT_11a)
 -- // StarterGui.ScreenGui.toggle.LocalScript \\ --
-local function SCRIPT_11b()
-	local script = UI["11b"]
+local function SCRIPT_11c()
+	local script = UI["11c"]
 	local UserInputService = game:GetService("UserInputService")
 
 	local gui = script.Parent
@@ -4015,10 +4029,10 @@ local function SCRIPT_11b()
 		end
 	end)
 end
-task.spawn(SCRIPT_11b)
+task.spawn(SCRIPT_11c)
 -- // StarterGui.ScreenGui.toggle.LocalScript \\ --
-local function SCRIPT_11c()
-	local script = UI["11c"]
+local function SCRIPT_11d()
+	local script = UI["11d"]
 	local frame = script.Parent.Parent:FindFirstChild("Frame") -- تأكد أن Frame داخل نفس Parent مثل الزر
 	local button = script.Parent -- الزر الذي سيتم النقر عليه
 
@@ -4029,6 +4043,6 @@ local function SCRIPT_11c()
 	end)
 
 end
-task.spawn(SCRIPT_11c)
+task.spawn(SCRIPT_11d)
 
 return UI["1"], require;
