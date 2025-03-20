@@ -1,0 +1,561 @@
+-- // GUI TO LUA \\ --
+
+-- // INSTANCES: 29 | SCRIPTS: 15 | MODULES: 0 \\ --
+
+local UI = {}
+
+-- // StarterGui.ScreenGui \\ --
+UI["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
+
+
+-- // StarterGui.ScreenGui.Frame \\ --
+UI["2"] = Instance.new("Frame", UI["1"])
+UI["2"]["BorderSizePixel"] = 0
+UI["2"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23)
+UI["2"]["Size"] = UDim2.new(0.75454, 0, 0.48632, 0)
+UI["2"]["Position"] = UDim2.new(0.16673, 0, 0.24768, 0)
+UI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui.Frame.TextBox \\ --
+UI["3"] = Instance.new("TextBox", UI["2"])
+UI["3"]["TextColor3"] = Color3.fromRGB(32, 32, 32)
+UI["3"]["PlaceholderColor3"] = Color3.fromRGB(235, 235, 235)
+UI["3"]["ZIndex"] = 2
+UI["3"]["BorderSizePixel"] = 0
+UI["3"]["TextWrapped"] = true
+UI["3"]["TextSize"] = 14
+UI["3"]["TextScaled"] = true
+UI["3"]["BackgroundColor3"] = Color3.fromRGB(194, 194, 194)
+UI["3"]["FontFace"] = Font.new([[rbxassetid://16658254058]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["3"]["Size"] = UDim2.new(0.38861, 0, 0.09463, 0)
+UI["3"]["Position"] = UDim2.new(0.3056, 0, 0.38795, 0)
+UI["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3"]["Text"] = [[]]
+UI["3"]["BackgroundTransparency"] = 0.5
+
+-- // StarterGui.ScreenGui.Frame.apply \\ --
+UI["4"] = Instance.new("TextButton", UI["2"])
+UI["4"]["TextWrapped"] = true
+UI["4"]["BorderSizePixel"] = 0
+UI["4"]["TextSize"] = 14
+UI["4"]["TextColor3"] = Color3.fromRGB(251, 251, 251)
+UI["4"]["TextScaled"] = true
+UI["4"]["BackgroundColor3"] = Color3.fromRGB(189, 189, 189)
+UI["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4"]["ZIndex"] = 2
+UI["4"]["Size"] = UDim2.new(0.20886, 0, 0.06905, 0)
+UI["4"]["BackgroundTransparency"] = 0.6
+UI["4"]["Name"] = [[apply]]
+UI["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4"]["Text"] = [[Apply]]
+UI["4"]["Position"] = UDim2.new(0.51056, 0, 0.52922, 0)
+
+-- // StarterGui.ScreenGui.Frame.apply.LocalScript \\ --
+UI["5"] = Instance.new("LocalScript", UI["4"])
+
+
+-- // StarterGui.ScreenGui.Frame.TextLabel \\ --
+UI["6"] = Instance.new("TextLabel", UI["2"])
+UI["6"]["TextWrapped"] = true
+UI["6"]["ZIndex"] = 2
+UI["6"]["BorderSizePixel"] = 0
+UI["6"]["TextScaled"] = true
+UI["6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6"]["TextSize"] = 14
+UI["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6"]["BackgroundTransparency"] = 1
+UI["6"]["Size"] = UDim2.new(0.55696, 0, 0.05627, 0)
+UI["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6"]["Text"] = [[Oranium]]
+UI["6"]["Position"] = UDim2.new(-0.22152, 0, -0.00139, 0)
+
+-- // StarterGui.ScreenGui.Frame.get key \\ --
+UI["7"] = Instance.new("TextButton", UI["2"])
+UI["7"]["TextWrapped"] = true
+UI["7"]["BorderSizePixel"] = 0
+UI["7"]["TextSize"] = 14
+UI["7"]["TextColor3"] = Color3.fromRGB(191, 191, 191)
+UI["7"]["TextScaled"] = true
+UI["7"]["BackgroundColor3"] = Color3.fromRGB(189, 189, 189)
+UI["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["7"]["ZIndex"] = 2
+UI["7"]["Size"] = UDim2.new(0.20253, 0, 0.06905, 0)
+UI["7"]["BackgroundTransparency"] = 0.6
+UI["7"]["Name"] = [[get key]]
+UI["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7"]["Text"] = [[get key]]
+UI["7"]["Position"] = UDim2.new(0.28014, 0, 0.53082, 0)
+
+-- // StarterGui.ScreenGui.Frame.get key.LocalScript \\ --
+UI["8"] = Instance.new("LocalScript", UI["7"])
+
+
+-- // StarterGui.ScreenGui.Frame.get key.LocalScript \\ --
+UI["9"] = Instance.new("LocalScript", UI["7"])
+
+
+-- // StarterGui.ScreenGui.Frame.get key.notfuction \\ --
+UI["a"] = Instance.new("LocalScript", UI["7"])
+UI["a"]["Name"] = [[notfuction]]
+
+-- // StarterGui.ScreenGui.Frame.TextLabel \\ --
+UI["b"] = Instance.new("TextLabel", UI["2"])
+UI["b"]["TextWrapped"] = true
+UI["b"]["ZIndex"] = 2
+UI["b"]["BorderSizePixel"] = 0
+UI["b"]["TextScaled"] = true
+UI["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b"]["TextSize"] = 14
+UI["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b"]["BackgroundTransparency"] = 1
+UI["b"]["Size"] = UDim2.new(0.25316, 0, 0.12788, 0)
+UI["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b"]["Text"] = [[key system]]
+UI["b"]["Position"] = UDim2.new(0.37221, 0, 0.11302, 0)
+
+-- // StarterGui.ScreenGui.Frame.ImageLabel \\ --
+UI["c"] = Instance.new("ImageLabel", UI["2"])
+UI["c"]["ZIndex"] = 2
+UI["c"]["BorderSizePixel"] = 0
+UI["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c"]["Image"] = [[rbxassetid://85755685416052]]
+UI["c"]["Size"] = UDim2.new(0.05696, 0, 0.11509, 0)
+UI["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c"]["BackgroundTransparency"] = 1
+UI["c"]["Position"] = UDim2.new(0.91035, 0, 0.02144, 0)
+
+-- // StarterGui.ScreenGui.Frame.ImageLabel.UICorner \\ --
+UI["d"] = Instance.new("UICorner", UI["c"])
+UI["d"]["CornerRadius"] = UDim.new(0, 100)
+
+-- // StarterGui.ScreenGui.Frame.ImageLabel.LocalScript \\ --
+UI["e"] = Instance.new("LocalScript", UI["c"])
+
+
+-- // StarterGui.ScreenGui.Frame.ImageLabel.UIStroke \\ --
+UI["f"] = Instance.new("UIStroke", UI["c"])
+UI["f"]["Transparency"] = 0.78
+UI["f"]["Thickness"] = 3.8
+
+-- // StarterGui.ScreenGui.Frame.LocalScript \\ --
+UI["10"] = Instance.new("LocalScript", UI["2"])
+
+
+-- // StarterGui.ScreenGui.Frame.close \\ --
+UI["11"] = Instance.new("TextButton", UI["2"])
+UI["11"]["TextWrapped"] = true
+UI["11"]["BorderSizePixel"] = 0
+UI["11"]["TextSize"] = 14
+UI["11"]["TextColor3"] = Color3.fromRGB(251, 251, 251)
+UI["11"]["TextScaled"] = true
+UI["11"]["BackgroundColor3"] = Color3.fromRGB(189, 189, 189)
+UI["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["11"]["ZIndex"] = 2
+UI["11"]["Size"] = UDim2.new(0.15949, 0, 0.05371, 0)
+UI["11"]["BackgroundTransparency"] = 0.6
+UI["11"]["Name"] = [[close]]
+UI["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["11"]["Text"] = [[close]]
+UI["11"]["Position"] = UDim2.new(0.02444, 0, 0.90688, 0)
+
+-- // StarterGui.ScreenGui.Frame.close.LocalScript \\ --
+UI["12"] = Instance.new("LocalScript", UI["11"])
+
+
+-- // StarterGui.ScreenGui.Frame.close.LocalScript \\ --
+UI["13"] = Instance.new("LocalScript", UI["11"])
+
+
+-- // StarterGui.ScreenGui.Frame.LocalScript \\ --
+UI["14"] = Instance.new("LocalScript", UI["2"])
+
+
+-- // StarterGui.ScreenGui.Frame.get discord link \\ --
+UI["15"] = Instance.new("TextButton", UI["2"])
+UI["15"]["TextWrapped"] = true
+UI["15"]["BorderSizePixel"] = 0
+UI["15"]["TextSize"] = 14
+UI["15"]["TextColor3"] = Color3.fromRGB(251, 251, 251)
+UI["15"]["TextScaled"] = true
+UI["15"]["BackgroundColor3"] = Color3.fromRGB(189, 189, 189)
+UI["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["15"]["ZIndex"] = 2
+UI["15"]["Size"] = UDim2.new(0.20886, 0, 0.06905, 0)
+UI["15"]["BackgroundTransparency"] = 0.6
+UI["15"]["Name"] = [[get discord link]]
+UI["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["15"]["Text"] = [[get discord link]]
+UI["15"]["Position"] = UDim2.new(0.38027, 0, 0.64781, 0)
+
+-- // StarterGui.ScreenGui.Frame.get discord link.LocalScript \\ --
+UI["16"] = Instance.new("LocalScript", UI["15"])
+
+
+-- // StarterGui.ScreenGui.Frame.get discord link.LocalScript \\ --
+UI["17"] = Instance.new("LocalScript", UI["15"])
+
+
+-- // StarterGui.ScreenGui.Frame.get discord link.notfuction \\ --
+UI["18"] = Instance.new("LocalScript", UI["15"])
+UI["18"]["Name"] = [[notfuction]]
+
+-- // StarterGui.ScreenGui.Frame.Frame \\ --
+UI["19"] = Instance.new("Frame", UI["2"])
+UI["19"]["BorderSizePixel"] = 0
+UI["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["19"]["Size"] = UDim2.new(0.0038, 0, 0.12276, 0)
+UI["19"]["Position"] = UDim2.new(0.64031, 0, 0.11707, 0)
+UI["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui.Frame.Frame.LocalScript \\ --
+UI["1a"] = Instance.new("LocalScript", UI["19"])
+
+
+-- // StarterGui.ScreenGui.Frame.Frame.LocalScript \\ --
+UI["1b"] = Instance.new("LocalScript", UI["19"])
+
+
+-- // StarterGui.ScreenGui.Frame.ImageLabel \\ --
+UI["1c"] = Instance.new("ImageLabel", UI["2"])
+UI["1c"]["BorderSizePixel"] = 0
+UI["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1c"]["ImageTransparency"] = 0.44
+UI["1c"]["Image"] = [[rbxassetid://87864377820979]]
+UI["1c"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1c"]["BackgroundTransparency"] = 1
+UI["1c"]["Position"] = UDim2.new(-0, 0, 0, 0)
+
+-- // StarterGui.ScreenGui.Frame.ImageLabel.LocalScript \\ --
+UI["1d"] = Instance.new("LocalScript", UI["1c"])
+
+
+-- // StarterGui.ScreenGui.Frame.apply.LocalScript \\ --
+local function SCRIPT_5()
+local script = UI["5"]
+	local textButton = script.Parent  -- تحديد الـ TextButton
+	local originalColor = textButton.TextColor3  -- حفظ اللون الأصلي للنص
+	
+	-- عند مرور الماوس على الزر
+	textButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأحمر بسلاسة
+		game:GetService("TweenService"):Create(textButton, TweenInfo.new(0.3), {TextColor3 = Color3.fromRGB(64, 255, 185)}):Play()
+	end)
+	
+	-- عند مغادرة الماوس للزر
+	textButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي للنص بسلاسة
+		game:GetService("TweenService"):Create(textButton, TweenInfo.new(0.3), {TextColor3 = originalColor}):Play()
+	end)
+	
+end
+task.spawn(SCRIPT_5)
+-- // StarterGui.ScreenGui.Frame.get key.LocalScript \\ --
+local function SCRIPT_8()
+local script = UI["8"]
+	local button = script.Parent -- تأكد أن هذا السكربت موضوع داخل الزر
+	local link = "https://adamgsvs.github.io/Oranium-get-key/" -- ضع الرابط الذي تريد نسخه
+	
+	button.MouseButton1Click:Connect(function()
+		if setclipboard then
+			setclipboard(link)
+			print("link in clipoard") -- يمكنك استبدالها بتنبيه للاعب
+		else
+			warn("error")
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_8)
+-- // StarterGui.ScreenGui.Frame.get key.LocalScript \\ --
+local function SCRIPT_9()
+local script = UI["9"]
+	local textButton = script.Parent  -- تحديد الـ TextButton
+	local originalColor = textButton.TextColor3  -- حفظ اللون الأصلي للنص
+	
+	-- عند مرور الماوس على الزر
+	textButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأحمر بسلاسة
+		game:GetService("TweenService"):Create(textButton, TweenInfo.new(0.3), {TextColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+	end)
+	
+	-- عند مغادرة الماوس للزر
+	textButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي للنص بسلاسة
+		game:GetService("TweenService"):Create(textButton, TweenInfo.new(0.3), {TextColor3 = originalColor}):Play()
+	end)
+	
+end
+task.spawn(SCRIPT_9)
+-- // StarterGui.ScreenGui.Frame.get key.notfuction \\ --
+local function SCRIPT_a()
+local script = UI["a"]
+	button = script.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+			Title = "link in clipboard", -- Required
+			Text = "https://adamgsvs.github.io/Oranium-get-key/", -- Required
+			Icon = "rbxassetid://77346728133778" -- Optional
+		})
+		button.Parent.Parent.Spiral.Enabled = false
+		button.Parent.Parent.Swimmingpool.Enabled = false
+		button.Parent.Parent.Building.Enabled = false
+		button.Parent.Parent.Trails.Enabled = false
+		button.Parent.Parent.stairs.Enabled = false
+	end)
+end
+task.spawn(SCRIPT_a)
+-- // StarterGui.ScreenGui.Frame.ImageLabel.LocalScript \\ --
+local function SCRIPT_e()
+local script = UI["e"]
+	local player = game.Players.LocalPlayer -- الحصول على اللاعب الحالي
+	local imageLabel = script.Parent -- تحديد الـ ImageLabel
+	
+	-- تغيير الصورة إلى صورة وجه اللاعب فقط
+	imageLabel.Image = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. player.UserId .. "&width=420&height=420&format=png"
+	
+end
+task.spawn(SCRIPT_e)
+-- // StarterGui.ScreenGui.Frame.LocalScript \\ --
+local function SCRIPT_10()
+local script = UI["10"]
+	-- تأكد من وجود الـ TextBox وزر في واجهة المستخدم
+	local textBox = script.Parent:WaitForChild("TextBox")  -- هنا يجب التأكد من أن الـ TextBox موجود في الـ Parent
+	local submitButton = script.Parent:WaitForChild("apply")  -- الزر الذي سيقوم بالتحقق من الكود
+	local Frame = script.Parent.Parent
+	
+	-- دالة لإرسال الإشعار
+	local function sendNotification(title, message)
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = title,  -- عنوان الإشعار
+			Text = message,  -- نص الإشعار
+			Icon = "rbxassetid://77346728133778"  -- أيقونة اختيارية
+		})
+	end
+	
+	-- عند الضغط على الزر
+	submitButton.MouseButton1Click:Connect(function()
+		local enteredText = textBox.Text
+	
+	
+		if enteredText == "key-9xiwd8feO4" then
+			sendNotification("Key Correct", "The key entered is correct!")
+	
+			
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/Adamgsvs/AD/refs/heads/main/Oranium.lua'))()
+	
+		else
+			-- إرسال إشعار في حالة الخطأ
+			sendNotification("Failed Key", "The entered key is incorrect.")
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_10)
+-- // StarterGui.ScreenGui.Frame.close.LocalScript \\ --
+local function SCRIPT_12()
+local script = UI["12"]
+	local textButton = script.Parent  -- تحديد الـ TextButton
+	local originalColor = textButton.TextColor3  -- حفظ اللون الأصلي للنص
+	
+	-- عند مرور الماوس على الزر
+	textButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأحمر بسلاسة
+		game:GetService("TweenService"):Create(textButton, TweenInfo.new(0.3), {TextColor3 = Color3.fromRGB(255, 117, 117)}):Play()
+	end)
+	
+	-- عند مغادرة الماوس للزر
+	textButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي للنص بسلاسة
+		game:GetService("TweenService"):Create(textButton, TweenInfo.new(0.3), {TextColor3 = originalColor}):Play()
+	end)
+	
+end
+task.spawn(SCRIPT_12)
+-- // StarterGui.ScreenGui.Frame.close.LocalScript \\ --
+local function SCRIPT_13()
+local script = UI["13"]
+	local Frame = script.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+end
+task.spawn(SCRIPT_13)
+-- // StarterGui.ScreenGui.Frame.LocalScript \\ --
+local function SCRIPT_14()
+local script = UI["14"]
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+task.spawn(SCRIPT_14)
+-- // StarterGui.ScreenGui.Frame.get discord link.LocalScript \\ --
+local function SCRIPT_16()
+local script = UI["16"]
+	local textButton = script.Parent  -- تحديد الـ TextButton
+	local originalColor = textButton.TextColor3  -- حفظ اللون الأصلي للنص
+	
+	-- عند مرور الماوس على الزر
+	textButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأحمر بسلاسة
+		game:GetService("TweenService"):Create(textButton, TweenInfo.new(0.3), {TextColor3 = Color3.fromRGB(111, 152, 255)}):Play()
+	end)
+	
+	-- عند مغادرة الماوس للزر
+	textButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي للنص بسلاسة
+		game:GetService("TweenService"):Create(textButton, TweenInfo.new(0.3), {TextColor3 = originalColor}):Play()
+	end)
+	
+end
+task.spawn(SCRIPT_16)
+-- // StarterGui.ScreenGui.Frame.get discord link.LocalScript \\ --
+local function SCRIPT_17()
+local script = UI["17"]
+	local button = script.Parent -- تأكد أن هذا السكربت موضوع داخل الزر
+	local link = "https://discord.gg/MQ8uFW4a" -- ضع الرابط الذي تريد نسخه
+	
+	button.MouseButton1Click:Connect(function()
+		if setclipboard then
+			setclipboard(link)
+			print("link in clipoard") -- يمكنك استبدالها بتنبيه للاعب
+		else
+			warn("error")
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_17)
+-- // StarterGui.ScreenGui.Frame.get discord link.notfuction \\ --
+local function SCRIPT_18()
+local script = UI["18"]
+	button = script.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+			Title = "discord link in clipboard", -- Required
+			Text = "https://discord.gg/MQ8uFW4a", -- Required
+			Icon = "rbxassetid://77346728133778" -- Optional
+		})
+		button.Parent.Parent.Spiral.Enabled = false
+		button.Parent.Parent.Swimmingpool.Enabled = false
+		button.Parent.Parent.Building.Enabled = false
+		button.Parent.Parent.Trails.Enabled = false
+		button.Parent.Parent.stairs.Enabled = false
+	end)
+end
+task.spawn(SCRIPT_18)
+-- // StarterGui.ScreenGui.Frame.Frame.LocalScript \\ --
+local function SCRIPT_1a()
+local script = UI["1a"]
+	local frame = script.Parent
+	
+	while true do
+		frame.Visible = not frame.Visible -- عكس حالة الظهور
+		task.wait(0.5) -- الانتظار نصف ثانية
+	end
+	
+end
+task.spawn(SCRIPT_1a)
+-- // StarterGui.ScreenGui.Frame.Frame.LocalScript \\ --
+local function SCRIPT_1b()
+local script = UI["1b"]
+	local frame = script.Parent
+	local tweenService = game:GetService("TweenService")
+	
+	local fadeIn = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local fadeOut = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+	
+	local appearTween = tweenService:Create(frame, fadeIn, {BackgroundTransparency = 0})
+	local disappearTween = tweenService:Create(frame, fadeOut, {BackgroundTransparency = 1})
+	
+	frame.BackgroundTransparency = 1
+	
+	task.wait(1)
+	appearTween:Play()
+	appearTween.Completed:Wait()
+	
+	task.wait(5)
+	disappearTween:Play()
+	disappearTween.Completed:Wait()
+	
+end
+task.spawn(SCRIPT_1b)
+-- // StarterGui.ScreenGui.Frame.ImageLabel.LocalScript \\ --
+local function SCRIPT_1d()
+local script = UI["1d"]
+	local imageLabel = script.Parent -- الوصول إلى الـ ImageLabel
+	local tweenService = game:GetService("TweenService")
+	
+	-- قائمة الصور التي سيتم التبديل بينها
+	local images = {
+		"rbxassetid://126133487346139",
+		"rbxassetid://85786425451412",
+		"rbxassetid://112726773747895"
+	}
+	
+	local tweenInfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut) -- مدة التأثير وأسلوبه
+	local index = 1 -- لتحديد الصورة الحالية
+	
+	while true do
+		-- تأثير التلاشي إلى الداخل (تصغير الحجم مع إخفاء تدريجي)
+		local fadeOut = tweenService:Create(imageLabel, tweenInfo, {ImageTransparency = 1, Size = UDim2.new(0,800, 0, 400)})
+		fadeOut:Play()
+		fadeOut.Completed:Wait() -- انتظار انتهاء التلاشي
+	
+		-- تغيير الصورة إلى الصورة التالية
+		index = index % #images + 1
+		imageLabel.Image = images[index]
+	
+		-- تأثير الظهور مع التوسع للخارج
+		local fadeIn = tweenService:Create(imageLabel, tweenInfo, {ImageTransparency = 0, Size = UDim2.new(1, 0, 1, 0)})
+		fadeIn:Play()
+		fadeIn.Completed:Wait() -- انتظار انتهاء الظهور
+	
+		wait(2) -- انتظار قبل تغيير الصورة التالية
+	end
+	
+end
+task.spawn(SCRIPT_1d)
+
+return UI["1"], require;
