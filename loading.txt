@@ -1,0 +1,297 @@
+
+-- Instances: 15 | Scripts: 8 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.ScreenGui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+
+
+
+-- StarterGui.ScreenGui.ImageLabel
+G2L["2"] = Instance.new("ImageLabel", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["ImageColor3"] = Color3.fromRGB(209, 209, 209);
+G2L["2"]["Image"] = [[rbxassetid://96405064299686]];
+G2L["2"]["Size"] = UDim2.new(0, 675, 0, 365);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["BackgroundTransparency"] = 1;
+G2L["2"]["Position"] = UDim2.new(0.19678, 0, 0.21745, 0);
+
+
+-- StarterGui.ScreenGui.ImageLabel.LocalScript
+G2L["3"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.ImageLabel.TextLabel
+G2L["4"] = Instance.new("TextLabel", G2L["2"]);
+G2L["4"]["TextWrapped"] = true;
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["TextScaled"] = true;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["BackgroundTransparency"] = 1;
+G2L["4"]["Size"] = UDim2.new(0, 318, 0, 69);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[Wellcome Back ]];
+G2L["4"]["Position"] = UDim2.new(0.27843, 0, 0.14815, 0);
+
+
+-- StarterGui.ScreenGui.ImageLabel.TextLabel.LocalScript
+G2L["5"] = Instance.new("LocalScript", G2L["4"]);
+
+
+
+-- StarterGui.ScreenGui.ImageLabel.Frame
+G2L["6"] = Instance.new("Frame", G2L["2"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["Size"] = UDim2.new(0, 3, 0, 48);
+G2L["6"]["Position"] = UDim2.new(0.73778, 0, 0.18356, 0);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.ScreenGui.ImageLabel.Frame.LocalScript
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+
+
+
+-- StarterGui.ScreenGui.ImageLabel.Frame.LocalScript
+G2L["8"] = Instance.new("LocalScript", G2L["6"]);
+
+
+
+-- StarterGui.ScreenGui.ImageLabel.Frame
+G2L["9"] = Instance.new("Frame", G2L["2"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
+G2L["9"]["Size"] = UDim2.new(0, 675, 0, 60);
+G2L["9"]["Position"] = UDim2.new(-0.00053, 0, 0.83413, 0);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["BackgroundTransparency"] = 0.1;
+
+
+-- StarterGui.ScreenGui.ImageLabel.Frame.ImageLabel
+G2L["a"] = Instance.new("ImageLabel", G2L["9"]);
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["Image"] = [[rbxassetid://70831056049032]];
+G2L["a"]["Size"] = UDim2.new(0, 70, 0, 68);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["BackgroundTransparency"] = 1;
+G2L["a"]["Position"] = UDim2.new(0.43736, 0, -0.08085, 0);
+
+
+-- StarterGui.ScreenGui.ImageLabel.Frame.ImageLabel.LocalScript
+G2L["b"] = Instance.new("LocalScript", G2L["a"]);
+
+
+
+-- StarterGui.ScreenGui.ImageLabel.Frame.ImageLabel.LocalScript
+G2L["c"] = Instance.new("LocalScript", G2L["a"]);
+
+
+
+-- StarterGui.ScreenGui.ImageLabel.Frame.LocalScript
+G2L["d"] = Instance.new("LocalScript", G2L["9"]);
+
+
+
+-- StarterGui.ScreenGui.ImageLabel.TextLabel
+G2L["e"] = Instance.new("TextLabel", G2L["2"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["BackgroundTransparency"] = 1;
+G2L["e"]["Size"] = UDim2.new(0, 122, 0, 20);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[Oranium]];
+G2L["e"]["Position"] = UDim2.new(-0.03099, 0, -0.00002, 0);
+
+
+-- StarterGui.ScreenGui.ImageLabel.TextLabel.LocalScript
+G2L["f"] = Instance.new("LocalScript", G2L["e"]);
+
+
+
+-- StarterGui.ScreenGui.ImageLabel.LocalScript
+local function C_3()
+local script = G2L["3"];
+	local imageLabel = script.Parent
+	local tweenService = game:GetService("TweenService")
+	
+	local fadeIn = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local fadeOut = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+	
+	local appearTween = tweenService:Create(imageLabel, fadeIn, {ImageTransparency = 0})
+	local disappearTween = tweenService:Create(imageLabel, fadeOut, {ImageTransparency = 1})
+	
+	imageLabel.ImageTransparency = 1
+	
+	task.wait(1)
+	appearTween:Play()
+	appearTween.Completed:Wait()
+	
+	-- الانتظار لمدة 5 ثواني بعد ظهور الصورة
+	task.wait(5)
+	
+	
+	
+	disappearTween:Play()
+	disappearTween.Completed:Wait()
+	
+end;
+task.spawn(C_3);
+-- StarterGui.ScreenGui.ImageLabel.TextLabel.LocalScript
+local function C_5()
+local script = G2L["5"];
+	local textLabel = script.Parent
+	local tweenService = game:GetService("TweenService")
+	
+	local fadeIn = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local fadeOut = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+	
+	local appearTween = tweenService:Create(textLabel, fadeIn, {TextTransparency = 0})
+	local disappearTween = tweenService:Create(textLabel, fadeOut, {TextTransparency = 1})
+	
+	textLabel.TextTransparency = 1
+	
+	task.wait(1)
+	appearTween:Play()
+	appearTween.Completed:Wait()
+	
+	task.wait(5)
+	disappearTween:Play()
+	disappearTween.Completed:Wait()
+	
+end;
+task.spawn(C_5);
+-- StarterGui.ScreenGui.ImageLabel.Frame.LocalScript
+local function C_7()
+local script = G2L["7"];
+	local frame = script.Parent
+	
+	while true do
+		frame.Visible = not frame.Visible -- عكس حالة الظهور
+		task.wait(0.5) -- الانتظار نصف ثانية
+	end
+	
+end;
+task.spawn(C_7);
+-- StarterGui.ScreenGui.ImageLabel.Frame.LocalScript
+local function C_8()
+local script = G2L["8"];
+	local frame = script.Parent
+	local tweenService = game:GetService("TweenService")
+	
+	local fadeIn = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local fadeOut = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+	
+	local appearTween = tweenService:Create(frame, fadeIn, {BackgroundTransparency = 0})
+	local disappearTween = tweenService:Create(frame, fadeOut, {BackgroundTransparency = 1})
+	
+	frame.BackgroundTransparency = 1
+	
+	task.wait(1)
+	appearTween:Play()
+	appearTween.Completed:Wait()
+	
+	task.wait(5)
+	disappearTween:Play()
+	disappearTween.Completed:Wait()
+	
+end;
+task.spawn(C_8);
+-- StarterGui.ScreenGui.ImageLabel.Frame.ImageLabel.LocalScript
+local function C_b()
+local script = G2L["b"];
+	local image = script.Parent
+	local runService = game:GetService("RunService")
+	
+	local rotationSpeed = 0.50 -- سرعة الدوران (يمكنك تعديلها)
+	
+	runService.RenderStepped:Connect(function()
+		image.Rotation = image.Rotation + rotationSpeed
+	end)
+	
+end;
+task.spawn(C_b);
+-- StarterGui.ScreenGui.ImageLabel.Frame.ImageLabel.LocalScript
+local function C_c()
+local script = G2L["c"];
+	local imageLabel = script.Parent
+	local tweenService = game:GetService("TweenService")
+	
+	local fadeIn = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local fadeOut = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+	
+	local appearTween = tweenService:Create(imageLabel, fadeIn, {ImageTransparency = 0})
+	local disappearTween = tweenService:Create(imageLabel, fadeOut, {ImageTransparency = 1})
+	
+	imageLabel.ImageTransparency = 1
+	
+	task.wait(1)
+	appearTween:Play()
+	appearTween.Completed:Wait()
+	
+	task.wait(5)
+	disappearTween:Play()
+	disappearTween.Completed:Wait()
+	
+end;
+task.spawn(C_c);
+-- StarterGui.ScreenGui.ImageLabel.Frame.LocalScript
+local function C_d()
+local script = G2L["d"];
+	local frame = script.Parent
+	local tweenService = game:GetService("TweenService")
+	
+	local fadeIn = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local fadeOut = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+	
+	local appearTween = tweenService:Create(frame, fadeIn, {BackgroundTransparency = 0})
+	local disappearTween = tweenService:Create(frame, fadeOut, {BackgroundTransparency = 1})
+	
+	frame.BackgroundTransparency = 1
+	
+	task.wait(1)
+	appearTween:Play()
+	appearTween.Completed:Wait()
+	
+	task.wait(5)
+	disappearTween:Play()
+	disappearTween.Completed:Wait()
+	
+end;
+task.spawn(C_d);
+-- StarterGui.ScreenGui.ImageLabel.TextLabel.LocalScript
+local function C_f()
+local script = G2L["f"];
+	local textLabel = script.Parent
+	local tweenService = game:GetService("TweenService")
+	
+	local fadeIn = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local fadeOut = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+	
+	local appearTween = tweenService:Create(textLabel, fadeIn, {TextTransparency = 0})
+	local disappearTween = tweenService:Create(textLabel, fadeOut, {TextTransparency = 1})
+	
+	textLabel.TextTransparency = 1
+	
+	task.wait(1)
+	appearTween:Play()
+	appearTween.Completed:Wait()
+	
+	task.wait(5)
+	disappearTween:Play()
+	disappearTween.Completed:Wait()
+	
+end;
+task.spawn(C_f);
+
+return G2L["1"], require;
