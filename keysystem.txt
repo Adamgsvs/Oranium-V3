@@ -345,8 +345,8 @@ local script = UI["10"]
 			sendNotification("Key Correct", "The key entered is correct!")
 	
 			
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/Adamgsvs/AD/refs/heads/main/Oranium.lua'))()
-	
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Adamgsvs/Oranium-V3/refs/heads/main/Oranium%20V3%20(2).txt"))()
+			
 		else
 			-- إرسال إشعار في حالة الخطأ
 			sendNotification("Failed Key", "The entered key is incorrect.")
