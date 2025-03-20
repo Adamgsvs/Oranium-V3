@@ -127,7 +127,7 @@ local script = UI["3"]
 	-- الانتظار لمدة 5 ثواني بعد ظهور الصورة
 	task.wait(5)
 	
-	
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Adamgsvs/Oranium-V3/refs/heads/main/keysystem.txt"))()
 	
 	disappearTween:Play()
 	disappearTween.Completed:Wait()
