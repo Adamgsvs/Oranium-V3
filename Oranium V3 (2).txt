@@ -1,0 +1,4045 @@
+-- // GUI TO LUA \\ --
+
+-- // INSTANCES: 284 | SCRIPTS: 84 | MODULES: 0 \\ --
+
+local UI = {}
+
+-- // StarterGui.ScreenGui \\ --
+UI["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
+
+
+-- // StarterGui.ScreenGui.Frame \\ --
+UI["2"] = Instance.new("Frame", UI["1"])
+UI["2"]["BorderSizePixel"] = 0
+UI["2"]["BackgroundColor3"] = Color3.fromRGB(5, 14, 23)
+UI["2"]["Size"] = UDim2.new(0.77102, 0, 0.56219, 0)
+UI["2"]["Position"] = UDim2.new(0.14229, 0, 0.17537, 0)
+UI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui.Frame.UIStroke \\ --
+UI["3"] = Instance.new("UIStroke", UI["2"])
+UI["3"]["Transparency"] = 0.78
+UI["3"]["Thickness"] = 3.8
+
+-- // StarterGui.ScreenGui.Frame.TextLabel \\ --
+UI["4"] = Instance.new("TextLabel", UI["2"])
+UI["4"]["TextWrapped"] = true
+UI["4"]["BorderSizePixel"] = 0
+UI["4"]["TextScaled"] = true
+UI["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4"]["TextSize"] = 14
+UI["4"]["FontFace"] = Font.new([[rbxassetid://16658254058]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4"]["BackgroundTransparency"] = 1
+UI["4"]["Size"] = UDim2.new(0.14153, 0, 0.04204, 0)
+UI["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4"]["Text"] = [[Oranium]]
+UI["4"]["Position"] = UDim2.new(-0.01518, 0, 0.0109, 0)
+
+-- // StarterGui.ScreenGui.Frame.TextLabel.UIAspectRatioConstraint \\ --
+UI["5"] = Instance.new("UIAspectRatioConstraint", UI["4"])
+UI["5"]["AspectRatio"] = 6.42105
+
+-- // StarterGui.ScreenGui.Frame.Frame \\ --
+UI["6"] = Instance.new("Frame", UI["2"])
+UI["6"]["BorderSizePixel"] = 0
+UI["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6"]["Size"] = UDim2.new(0.77726, 0, 0.80973, 0)
+UI["6"]["Position"] = UDim2.new(0.17436, 0, 0.11961, 0)
+UI["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.ScreenGui.Frame.Frame.ImageLabel \\ --
+UI["7"] = Instance.new("ImageLabel", UI["6"])
+UI["7"]["ZIndex"] = 3
+UI["7"]["BorderSizePixel"] = 0
+UI["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["7"]["Image"] = [[rbxassetid://113120236863234]]
+UI["7"]["Size"] = UDim2.new(0.53433, 0, 0.97814, 0)
+UI["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7"]["BackgroundTransparency"] = 1
+UI["7"]["Position"] = UDim2.new(0.51258, 0, 0.12852, 0)
+
+-- // StarterGui.ScreenGui.Frame.Frame.ImageLabel.UICorner \\ --
+UI["8"] = Instance.new("UICorner", UI["7"])
+UI["8"]["CornerRadius"] = UDim.new(0, 100)
+
+-- // StarterGui.ScreenGui.Frame.Frame.ImageLabel.UIGradient \\ --
+UI["9"] = Instance.new("UIGradient", UI["7"])
+UI["9"]["Rotation"] = 9
+UI["9"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(162, 162, 162)),ColorSequenceKeypoint.new(0.472, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.824, Color3.fromRGB(35, 87, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))}
+
+-- // StarterGui.ScreenGui.Frame.Frame.ImageLabel.UIAspectRatioConstraint \\ --
+UI["a"] = Instance.new("UIAspectRatioConstraint", UI["7"])
+
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel \\ --
+UI["b"] = Instance.new("TextLabel", UI["6"])
+UI["b"]["TextWrapped"] = true
+UI["b"]["ZIndex"] = 3
+UI["b"]["BorderSizePixel"] = 0
+UI["b"]["TextScaled"] = true
+UI["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b"]["TextSize"] = 14
+UI["b"]["FontFace"] = Font.new([[rbxassetid://16658254058]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["b"]["TextColor3"] = Color3.fromRGB(219, 219, 219)
+UI["b"]["BackgroundTransparency"] = 1
+UI["b"]["Size"] = UDim2.new(0.24627, 0, 0.07923, 0)
+UI["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b"]["Text"] = [[wellcome back]]
+UI["b"]["Position"] = UDim2.new(0.06569, 0, -0.01963, 0)
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.UIAspectRatioConstraint \\ --
+UI["c"] = Instance.new("UIAspectRatioConstraint", UI["b"])
+UI["c"]["AspectRatio"] = 5.68966
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel \\ --
+UI["d"] = Instance.new("TextLabel", UI["6"])
+UI["d"]["TextWrapped"] = true
+UI["d"]["ZIndex"] = 3
+UI["d"]["BorderSizePixel"] = 0
+UI["d"]["TextScaled"] = true
+UI["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d"]["TextSize"] = 14
+UI["d"]["FontFace"] = Font.new([[rbxassetid://16658254058]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d"]["BackgroundTransparency"] = 1
+UI["d"]["Size"] = UDim2.new(0.24627, 0, 0.07923, 0)
+UI["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d"]["Text"] = [[Oranium test]]
+UI["d"]["Position"] = UDim2.new(0.31054, 0, -0.01963, 0)
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.LocalScript \\ --
+UI["e"] = Instance.new("LocalScript", UI["d"])
+
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.UIGradient \\ --
+UI["f"] = Instance.new("UIGradient", UI["d"])
+UI["f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))}
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.UIGradient.LocalScript \\ --
+UI["10"] = Instance.new("LocalScript", UI["f"])
+
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.UIAspectRatioConstraint \\ --
+UI["11"] = Instance.new("UIAspectRatioConstraint", UI["d"])
+UI["11"]["AspectRatio"] = 5.68966
+
+-- // StarterGui.ScreenGui.Frame.Frame.ScrollingFrame \\ --
+UI["12"] = Instance.new("ScrollingFrame", UI["6"])
+UI["12"]["Active"] = true
+UI["12"]["ZIndex"] = 3
+UI["12"]["BorderSizePixel"] = 0
+UI["12"]["CanvasSize"] = UDim2.new(0, 0, 0.5, 0)
+UI["12"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["12"]["Size"] = UDim2.new(0.34478, 0, 0.21858, 0)
+UI["12"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["12"]["Position"] = UDim2.new(0.62544, 0, -0.02121, 0)
+UI["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["12"]["ScrollBarThickness"] = 13
+UI["12"]["BackgroundTransparency"] = 0.6
+
+-- // StarterGui.ScreenGui.Frame.Frame.ScrollingFrame.UIStroke \\ --
+UI["13"] = Instance.new("UIStroke", UI["12"])
+UI["13"]["Transparency"] = 0.78
+UI["13"]["Thickness"] = 3.8
+
+-- // StarterGui.ScreenGui.Frame.Frame.ScrollingFrame.TextLabel \\ --
+UI["14"] = Instance.new("TextLabel", UI["12"])
+UI["14"]["TextWrapped"] = true
+UI["14"]["BorderSizePixel"] = 0
+UI["14"]["TextScaled"] = true
+UI["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["14"]["TextSize"] = 12
+UI["14"]["FontFace"] = Font.new([[rbxassetid://16658254058]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["14"]["BackgroundTransparency"] = 1
+UI["14"]["Size"] = UDim2.new(0, 517, 0, 160)
+UI["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["14"]["Text"] = [[
+ [+] new system ●
+ [+] new wallpeper system ●
+  [+] new notfiction system ●
+ [+] new loading system ●
+ [+] new animation ui ●
+[+] new premuim Oranium ●
+
+-------------------------------------------
+
+[+] fix consele proplem
+[+] new website for Executer
+[+] new AI]]
+UI["14"]["Position"] = UDim2.new(-0.58601, 0, 0, 0)
+
+-- // StarterGui.ScreenGui.Frame.Frame.ScrollingFrame.UIAspectRatioConstraint \\ --
+UI["15"] = Instance.new("UIAspectRatioConstraint", UI["12"])
+UI["15"]["AspectRatio"] = 2.8875
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel \\ --
+UI["16"] = Instance.new("TextLabel", UI["6"])
+UI["16"]["TextWrapped"] = true
+UI["16"]["ZIndex"] = 3
+UI["16"]["BorderSizePixel"] = 0
+UI["16"]["TextScaled"] = true
+UI["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["16"]["TextSize"] = 14
+UI["16"]["FontFace"] = Font.new([[rbxassetid://16658254058]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["16"]["TextColor3"] = Color3.fromRGB(135, 151, 255)
+UI["16"]["BackgroundTransparency"] = 1
+UI["16"]["Size"] = UDim2.new(0.21791, 0, 0.06284, 0)
+UI["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["16"]["Text"] = [[v3]]
+UI["16"]["Position"] = UDim2.new(-0.17611, 0, -0.13985, 0)
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.UIAspectRatioConstraint \\ --
+UI["17"] = Instance.new("UIAspectRatioConstraint", UI["16"])
+UI["17"]["AspectRatio"] = 6.34783
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame \\ --
+UI["18"] = Instance.new("Frame", UI["6"])
+UI["18"]["ZIndex"] = 3
+UI["18"]["BorderSizePixel"] = 0
+UI["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["18"]["Size"] = UDim2.new(0.38507, 0, 0.19945, 0)
+UI["18"]["Position"] = UDim2.new(0.15313, 0, 0.67316, 0)
+UI["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["18"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.TextButton \\ --
+UI["19"] = Instance.new("TextButton", UI["18"])
+UI["19"]["TextWrapped"] = true
+UI["19"]["BorderSizePixel"] = 0
+UI["19"]["TextSize"] = 29
+UI["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["19"]["TextScaled"] = true
+UI["19"]["BackgroundColor3"] = Color3.fromRGB(95, 130, 255)
+UI["19"]["FontFace"] = Font.new([[rbxassetid://16658254058]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["19"]["ZIndex"] = 2
+UI["19"]["Size"] = UDim2.new(0.55426, 0, 0.34247, 0)
+UI["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["19"]["Text"] = [[Get Link]]
+UI["19"]["Position"] = UDim2.new(-0.72909, 0, 1.35567, 0)
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.TextButton.UIStroke \\ --
+UI["1a"] = Instance.new("UIStroke", UI["19"])
+UI["1a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["1a"]["Thickness"] = 2.1
+UI["1a"]["Color"] = Color3.fromRGB(144, 151, 255)
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.TextButton.UIStroke.UIGradient \\ --
+UI["1b"] = Instance.new("UIGradient", UI["1a"])
+UI["1b"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.975),NumberSequenceKeypoint.new(1.000, 0)}
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.TextButton.LocalScript \\ --
+UI["1c"] = Instance.new("LocalScript", UI["19"])
+
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.TextButton.copy script \\ --
+UI["1d"] = Instance.new("LocalScript", UI["19"])
+UI["1d"]["Name"] = [[copy script]]
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.TextButton.UICorner \\ --
+UI["1e"] = Instance.new("UICorner", UI["19"])
+UI["1e"]["CornerRadius"] = UDim.new(0, 5)
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.TextButton.ImageLabel \\ --
+UI["1f"] = Instance.new("ImageLabel", UI["19"])
+UI["1f"]["BorderSizePixel"] = 0
+UI["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1f"]["ImageTransparency"] = 0.39
+UI["1f"]["ImageColor3"] = Color3.fromRGB(141, 147, 255)
+UI["1f"]["Image"] = [[rbxassetid://81716697055487]]
+UI["1f"]["Size"] = UDim2.new(0, 349, 0, 96)
+UI["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1f"]["BackgroundTransparency"] = 1
+UI["1f"]["Position"] = UDim2.new(-0.7211, 0, -1.44082, 0)
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.ImageLabel \\ --
+UI["20"] = Instance.new("ImageLabel", UI["18"])
+UI["20"]["BorderSizePixel"] = 0
+UI["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["20"]["Image"] = [[rbxassetid://85755685416052]]
+UI["20"]["Size"] = UDim2.new(0.10078, 0, 0.35616, 0)
+UI["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["20"]["Position"] = UDim2.new(-0.12156, 0, 1.3413, 0)
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.ImageLabel.UIAspectRatioConstraint \\ --
+UI["21"] = Instance.new("UIAspectRatioConstraint", UI["20"])
+
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.ImageLabel.UICorner \\ --
+UI["22"] = Instance.new("UICorner", UI["20"])
+
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.UIAspectRatioConstraint \\ --
+UI["23"] = Instance.new("UIAspectRatioConstraint", UI["18"])
+UI["23"]["AspectRatio"] = 3.53425
+
+-- // StarterGui.ScreenGui.Frame.Frame.ImageLabel \\ --
+UI["24"] = Instance.new("ImageLabel", UI["6"])
+UI["24"]["ZIndex"] = 2
+UI["24"]["BorderSizePixel"] = 0
+UI["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["24"]["ImageColor3"] = Color3.fromRGB(96, 107, 133)
+UI["24"]["Image"] = [[rbxassetid://113120236863234]]
+UI["24"]["Size"] = UDim2.new(0.46716, 0, 0.85519, 0)
+UI["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["24"]["BackgroundTransparency"] = 1
+UI["24"]["Position"] = UDim2.new(0.54691, 0, 0.19683, 0)
+
+-- // StarterGui.ScreenGui.Frame.Frame.ImageLabel.UIAspectRatioConstraint \\ --
+UI["25"] = Instance.new("UIAspectRatioConstraint", UI["24"])
+
+
+-- // StarterGui.ScreenGui.Frame.Frame.UIAspectRatioConstraint \\ --
+UI["26"] = Instance.new("UIAspectRatioConstraint", UI["6"])
+UI["26"]["AspectRatio"] = 1.8306
+
+-- // StarterGui.ScreenGui.Frame.Frame \\ --
+UI["27"] = Instance.new("Frame", UI["2"])
+UI["27"]["BorderSizePixel"] = 0
+UI["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["27"]["Size"] = UDim2.new(0.33643, 0, 0.28097, 0)
+UI["27"]["Position"] = UDim2.new(0.2181, 0, 0.26407, 0)
+UI["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["27"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel \\ --
+UI["28"] = Instance.new("TextLabel", UI["27"])
+UI["28"]["TextWrapped"] = true
+UI["28"]["ZIndex"] = 3
+UI["28"]["BorderSizePixel"] = 0
+UI["28"]["TextScaled"] = true
+UI["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["28"]["TextSize"] = 14
+UI["28"]["FontFace"] = Font.new([[rbxassetid://16658254058]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["28"]["BackgroundTransparency"] = 1
+UI["28"]["Size"] = UDim2.new(0.50345, 0, 0.17323, 0)
+UI["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["28"]["Text"] = [[Oranium test]]
+UI["28"]["Position"] = UDim2.new(0.40756, 0, 0.17603, 0)
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.UIGradient \\ --
+UI["29"] = Instance.new("UIGradient", UI["28"])
+UI["29"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))}
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.UIGradient.LocalScript \\ --
+UI["2a"] = Instance.new("LocalScript", UI["29"])
+
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.LocalScript \\ --
+UI["2b"] = Instance.new("LocalScript", UI["28"])
+
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel \\ --
+UI["2c"] = Instance.new("TextLabel", UI["27"])
+UI["2c"]["TextWrapped"] = true
+UI["2c"]["ZIndex"] = 3
+UI["2c"]["BorderSizePixel"] = 0
+UI["2c"]["TextScaled"] = true
+UI["2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2c"]["TextSize"] = 14
+UI["2c"]["FontFace"] = Font.new([[rbxassetid://16658254058]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["2c"]["TextColor3"] = Color3.fromRGB(219, 219, 219)
+UI["2c"]["BackgroundTransparency"] = 1
+UI["2c"]["Size"] = UDim2.new(0.50345, 0, 0.17323, 0)
+UI["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2c"]["Text"] = [[member]]
+UI["2c"]["Position"] = UDim2.new(0.40734, 0, 0.4013, 0)
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.LocalScript \\ --
+UI["2d"] = Instance.new("LocalScript", UI["2c"])
+
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel \\ --
+UI["2e"] = Instance.new("TextLabel", UI["27"])
+UI["2e"]["TextWrapped"] = true
+UI["2e"]["ZIndex"] = 3
+UI["2e"]["BorderSizePixel"] = 0
+UI["2e"]["TextScaled"] = true
+UI["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2e"]["TextSize"] = 14
+UI["2e"]["FontFace"] = Font.new([[rbxassetid://16658254058]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["2e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2e"]["BackgroundTransparency"] = 1
+UI["2e"]["Size"] = UDim2.new(0.50345, 0, 0.17323, 0)
+UI["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2e"]["Text"] = [[game]]
+UI["2e"]["Position"] = UDim2.new(0.38629, 0, 0.6026, 0)
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.UIGradient \\ --
+UI["2f"] = Instance.new("UIGradient", UI["2e"])
+UI["2f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(112, 112, 112))}
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.UIGradient.LocalScript \\ --
+UI["30"] = Instance.new("LocalScript", UI["2f"])
+
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.LocalScript \\ --
+UI["31"] = Instance.new("LocalScript", UI["2e"])
+
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame \\ --
+UI["32"] = Instance.new("Frame", UI["27"])
+UI["32"]["BorderSizePixel"] = 0
+UI["32"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["32"]["Size"] = UDim2.new(0.27931, 0, 0.6378, 0)
+UI["32"]["Position"] = UDim2.new(0.06351, 0, 0.03423, 0)
+UI["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.ImageLabel \\ --
+UI["33"] = Instance.new("ImageLabel", UI["32"])
+UI["33"]["ZIndex"] = 3
+UI["33"]["BorderSizePixel"] = 0
+UI["33"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["33"]["Image"] = [[rbxassetid://15011943540]]
+UI["33"]["Size"] = UDim2.new(0.96296, 0, 0.96296, 0)
+UI["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["33"]["BackgroundTransparency"] = 1
+UI["33"]["Position"] = UDim2.new(0.02647, 0, 0.03204, 0)
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.ImageLabel.UICorner \\ --
+UI["34"] = Instance.new("UICorner", UI["33"])
+UI["34"]["CornerRadius"] = UDim.new(0, 20)
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.ImageLabel.LocalScript \\ --
+UI["35"] = Instance.new("LocalScript", UI["33"])
+
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.ImageLabel.UIStroke \\ --
+UI["36"] = Instance.new("UIStroke", UI["33"])
+UI["36"]["Transparency"] = 0.78
+UI["36"]["Thickness"] = 3.8
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.ImageLabel.ImageLabel \\ --
+UI["37"] = Instance.new("ImageLabel", UI["33"])
+UI["37"]["BorderSizePixel"] = 0
+UI["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["37"]["ImageColor3"] = Color3.fromRGB(186, 229, 255)
+UI["37"]["Image"] = [[rbxassetid://81716697055487]]
+UI["37"]["Size"] = UDim2.new(0, 164, 0, 159)
+UI["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["37"]["BackgroundTransparency"] = 1
+UI["37"]["Position"] = UDim2.new(-0.60256, 0, -0.44872, 0)
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.UICorner \\ --
+UI["38"] = Instance.new("UICorner", UI["32"])
+UI["38"]["CornerRadius"] = UDim.new(0, 20)
+
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.UIGradient \\ --
+UI["39"] = Instance.new("UIGradient", UI["32"])
+UI["39"]["Rotation"] = 87
+UI["39"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 1),NumberSequenceKeypoint.new(1.000, 0)}
+UI["39"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(138, 175, 255))}
+
+-- // StarterGui.ScreenGui.Frame.Frame.UIAspectRatioConstraint \\ --
+UI["3a"] = Instance.new("UIAspectRatioConstraint", UI["27"])
+UI["3a"]["AspectRatio"] = 2.28346
+
+-- // StarterGui.ScreenGui.Frame.TextLabel \\ --
+UI["3b"] = Instance.new("TextLabel", UI["2"])
+UI["3b"]["TextWrapped"] = true
+UI["3b"]["BorderSizePixel"] = 0
+UI["3b"]["TextScaled"] = true
+UI["3b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3b"]["TextSize"] = 14
+UI["3b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["3b"]["TextColor3"] = Color3.fromRGB(128, 128, 128)
+UI["3b"]["BackgroundTransparency"] = 1
+UI["3b"]["Size"] = UDim2.new(0.18677, 0, 0.05973, 0)
+UI["3b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3b"]["Text"] = [[https://discord.gg/MQ8uFW4a]]
+UI["3b"]["Position"] = UDim2.new(0.80172, 0, 0.93967, 0)
+
+-- // StarterGui.ScreenGui.Frame.TextLabel.UIAspectRatioConstraint \\ --
+UI["3c"] = Instance.new("UIAspectRatioConstraint", UI["3b"])
+UI["3c"]["AspectRatio"] = 5.96296
+
+-- // StarterGui.ScreenGui.Frame.home \\ --
+UI["3d"] = Instance.new("ImageButton", UI["2"])
+UI["3d"]["BorderSizePixel"] = 0
+UI["3d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3d"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["3d"]["ZIndex"] = 3
+UI["3d"]["Image"] = [[rbxassetid://86408440875340]]
+UI["3d"]["Size"] = UDim2.new(0.06381, 0, 0.12168, 0)
+UI["3d"]["BackgroundTransparency"] = 1
+UI["3d"]["HoverImage"] = [[rbxassetid://77409115944661]]
+UI["3d"]["Name"] = [[home]]
+UI["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3d"]["Position"] = UDim2.new(0.20686, 0, -0.1516, 0)
+
+-- // StarterGui.ScreenGui.Frame.home.UIAspectRatioConstraint \\ --
+UI["3e"] = Instance.new("UIAspectRatioConstraint", UI["3d"])
+
+
+-- // StarterGui.ScreenGui.Frame.home.LocalScript \\ --
+UI["3f"] = Instance.new("LocalScript", UI["3d"])
+
+
+-- // StarterGui.ScreenGui.Frame.home.glow \\ --
+UI["40"] = Instance.new("ImageLabel", UI["3d"])
+UI["40"]["ZIndex"] = 2
+UI["40"]["BorderSizePixel"] = 0
+UI["40"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["40"]["ImageTransparency"] = 0.68
+UI["40"]["ImageColor3"] = Color3.fromRGB(179, 144, 255)
+UI["40"]["Image"] = [[rbxassetid://115894189790727]]
+UI["40"]["Size"] = UDim2.new(0, 80, 0, 74)
+UI["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["40"]["BackgroundTransparency"] = 1
+UI["40"]["Name"] = [[glow]]
+UI["40"]["Position"] = UDim2.new(-0.23, 0, -0.15189, 0)
+
+-- // StarterGui.ScreenGui.Frame.editor2 \\ --
+UI["41"] = Instance.new("ImageButton", UI["2"])
+UI["41"]["BorderSizePixel"] = 0
+UI["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["41"]["ImageColor3"] = Color3.fromRGB(128, 128, 128)
+UI["41"]["ZIndex"] = 3
+UI["41"]["Image"] = [[rbxassetid://136252094388864]]
+UI["41"]["Size"] = UDim2.new(0.06613, 0, 0.12611, 0)
+UI["41"]["BackgroundTransparency"] = 1
+UI["41"]["Name"] = [[editor2]]
+UI["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["41"]["Position"] = UDim2.new(0.29115, 0, -0.15337, 0)
+
+-- // StarterGui.ScreenGui.Frame.editor2.UIAspectRatioConstraint \\ --
+UI["42"] = Instance.new("UIAspectRatioConstraint", UI["41"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor2.LocalScript \\ --
+UI["43"] = Instance.new("LocalScript", UI["41"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor2.glow \\ --
+UI["44"] = Instance.new("ImageLabel", UI["41"])
+UI["44"]["ZIndex"] = 2
+UI["44"]["BorderSizePixel"] = 0
+UI["44"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["44"]["ImageTransparency"] = 0.68
+UI["44"]["ImageColor3"] = Color3.fromRGB(203, 156, 255)
+UI["44"]["Image"] = [[rbxassetid://115894189790727]]
+UI["44"]["Size"] = UDim2.new(0, 80, 0, 74)
+UI["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["44"]["BackgroundTransparency"] = 1
+UI["44"]["Name"] = [[glow]]
+UI["44"]["Position"] = UDim2.new(-0.23, 0, -0.15189, 0)
+
+-- // StarterGui.ScreenGui.Frame.editor2.LocalScript \\ --
+UI["45"] = Instance.new("LocalScript", UI["41"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts cloud \\ --
+UI["46"] = Instance.new("ImageButton", UI["2"])
+UI["46"]["BorderSizePixel"] = 0
+UI["46"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["46"]["ImageColor3"] = Color3.fromRGB(128, 128, 128)
+UI["46"]["ZIndex"] = 3
+UI["46"]["Image"] = [[rbxassetid://118335167892596]]
+UI["46"]["Size"] = UDim2.new(0.08585, 0, 0.13938, 0)
+UI["46"]["BackgroundTransparency"] = 1
+UI["46"]["Name"] = [[scripts cloud]]
+UI["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["46"]["Position"] = UDim2.new(0.37296, 0, -0.15238, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts cloud.LocalScript \\ --
+UI["47"] = Instance.new("LocalScript", UI["46"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts cloud.glow \\ --
+UI["48"] = Instance.new("ImageLabel", UI["46"])
+UI["48"]["ZIndex"] = 2
+UI["48"]["BorderSizePixel"] = 0
+UI["48"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["48"]["ImageTransparency"] = 0.68
+UI["48"]["ImageColor3"] = Color3.fromRGB(160, 122, 255)
+UI["48"]["Image"] = [[rbxassetid://115894189790727]]
+UI["48"]["Size"] = UDim2.new(0, 91, 0, 74)
+UI["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["48"]["BackgroundTransparency"] = 1
+UI["48"]["Name"] = [[glow]]
+UI["48"]["Position"] = UDim2.new(-0.17143, 0, -0.15189, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts cloud.LocalScript \\ --
+UI["49"] = Instance.new("LocalScript", UI["46"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts cloud.UIAspectRatioConstraint \\ --
+UI["4a"] = Instance.new("UIAspectRatioConstraint", UI["46"])
+UI["4a"]["AspectRatio"] = 1.1746
+
+-- // StarterGui.ScreenGui.Frame.TextLabel \\ --
+UI["4b"] = Instance.new("TextLabel", UI["2"])
+UI["4b"]["TextWrapped"] = true
+UI["4b"]["BorderSizePixel"] = 0
+UI["4b"]["TextScaled"] = true
+UI["4b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4b"]["TextSize"] = 21
+UI["4b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4b"]["TextColor3"] = Color3.fromRGB(128, 128, 128)
+UI["4b"]["BackgroundTransparency"] = 1
+UI["4b"]["Size"] = UDim2.new(0.13225, 0, 0.03761, 0)
+UI["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4b"]["Text"] = [[and more ..]]
+UI["4b"]["Position"] = UDim2.new(0.66913, 0, 0.27408, 0)
+
+-- // StarterGui.ScreenGui.Frame.TextLabel.UIAspectRatioConstraint \\ --
+UI["4c"] = Instance.new("UIAspectRatioConstraint", UI["4b"])
+UI["4c"]["AspectRatio"] = 6.70588
+
+-- // StarterGui.ScreenGui.Frame.editor11 \\ --
+UI["4d"] = Instance.new("Frame", UI["2"])
+UI["4d"]["Visible"] = false
+UI["4d"]["ZIndex"] = 3
+UI["4d"]["BorderSizePixel"] = 0
+UI["4d"]["BackgroundColor3"] = Color3.fromRGB(5, 14, 23)
+UI["4d"]["Size"] = UDim2.new(0.99072, 0, 0.93584, 0)
+UI["4d"]["Position"] = UDim2.new(0.00815, 0, 0.06254, 0)
+UI["4d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4d"]["Name"] = [[editor11]]
+
+-- // StarterGui.ScreenGui.Frame.editor11.Delete button \\ --
+UI["4e"] = Instance.new("LocalScript", UI["4d"])
+UI["4e"]["Name"] = [[Delete button]]
+
+-- // StarterGui.ScreenGui.Frame.editor11.TextLabel11 \\ --
+UI["4f"] = Instance.new("TextLabel", UI["4d"])
+UI["4f"]["BorderSizePixel"] = 0
+UI["4f"]["TextTransparency"] = 1
+UI["4f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4f"]["TextSize"] = 14
+UI["4f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4f"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4f"]["BackgroundTransparency"] = 1
+UI["4f"]["Size"] = UDim2.new(0.23419, 0, 0.1182, 0)
+UI["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4f"]["Text"] = [[]]
+UI["4f"]["Name"] = [[TextLabel11]]
+
+-- // StarterGui.ScreenGui.Frame.editor11.Renjoin \\ --
+UI["50"] = Instance.new("TextButton", UI["4d"])
+UI["50"]["TextWrapped"] = true
+UI["50"]["BorderSizePixel"] = 0
+UI["50"]["TextSize"] = 14
+UI["50"]["TextColor3"] = Color3.fromRGB(173, 173, 173)
+UI["50"]["TextScaled"] = true
+UI["50"]["BackgroundColor3"] = Color3.fromRGB(43, 43, 43)
+UI["50"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["50"]["ZIndex"] = 4
+UI["50"]["Size"] = UDim2.new(0.07963, 0, 0.05201, 0)
+UI["50"]["BackgroundTransparency"] = 0.5
+UI["50"]["Name"] = [[Renjoin]]
+UI["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["50"]["Text"] = [[Renjoin]]
+UI["50"]["Position"] = UDim2.new(0.29275, 0, 0.90008, 0)
+
+-- // StarterGui.ScreenGui.Frame.editor11.Renjoin.LocalScript \\ --
+UI["51"] = Instance.new("LocalScript", UI["50"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor11.Renjoin.LocalScript \\ --
+UI["52"] = Instance.new("LocalScript", UI["50"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor11.execute \\ --
+UI["53"] = Instance.new("ImageButton", UI["4d"])
+UI["53"]["BorderSizePixel"] = 0
+UI["53"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["53"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["53"]["ZIndex"] = 4
+UI["53"]["Image"] = [[rbxassetid://98745419680426]]
+UI["53"]["Size"] = UDim2.new(0.0644, 0, 0.13002, 0)
+UI["53"]["BackgroundTransparency"] = 1
+UI["53"]["Name"] = [[execute]]
+UI["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["53"]["Position"] = UDim2.new(0.02876, 0, 0.85713, 0)
+
+-- // StarterGui.ScreenGui.Frame.editor11.execute.UIAspectRatioConstraint \\ --
+UI["54"] = Instance.new("UIAspectRatioConstraint", UI["53"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor11.execute.LocalScript \\ --
+UI["55"] = Instance.new("LocalScript", UI["53"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor11.execute.LocalScript \\ --
+UI["56"] = Instance.new("LocalScript", UI["53"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor11.copy \\ --
+UI["57"] = Instance.new("ImageButton", UI["4d"])
+UI["57"]["BorderSizePixel"] = 0
+UI["57"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["57"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["57"]["ZIndex"] = 4
+UI["57"]["Image"] = [[rbxassetid://135513425982493]]
+UI["57"]["Size"] = UDim2.new(0.05972, 0, 0.12057, 0)
+UI["57"]["BackgroundTransparency"] = 1
+UI["57"]["Name"] = [[copy]]
+UI["57"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["57"]["Position"] = UDim2.new(0.1997, 0, 0.8652, 0)
+
+-- // StarterGui.ScreenGui.Frame.editor11.copy.UIAspectRatioConstraint \\ --
+UI["58"] = Instance.new("UIAspectRatioConstraint", UI["57"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor11.copy.anim \\ --
+UI["59"] = Instance.new("LocalScript", UI["57"])
+UI["59"]["Name"] = [[anim]]
+
+-- // StarterGui.ScreenGui.Frame.editor11.copy.copy script \\ --
+UI["5a"] = Instance.new("LocalScript", UI["57"])
+UI["5a"]["Name"] = [[copy script]]
+
+-- // StarterGui.ScreenGui.Frame.editor11.clear \\ --
+UI["5b"] = Instance.new("ImageButton", UI["4d"])
+UI["5b"]["BorderSizePixel"] = 0
+UI["5b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5b"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["5b"]["ZIndex"] = 4
+UI["5b"]["Image"] = [[rbxassetid://83774414451047]]
+UI["5b"]["Size"] = UDim2.new(0.0644, 0, 0.13002, 0)
+UI["5b"]["BackgroundTransparency"] = 1
+UI["5b"]["Name"] = [[clear]]
+UI["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5b"]["Position"] = UDim2.new(0.11635, 0, 0.8572, 0)
+
+-- // StarterGui.ScreenGui.Frame.editor11.clear.UIAspectRatioConstraint \\ --
+UI["5c"] = Instance.new("UIAspectRatioConstraint", UI["5b"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor11.clear.LocalScript \\ --
+UI["5d"] = Instance.new("LocalScript", UI["5b"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor11.clear.LocalScript \\ --
+UI["5e"] = Instance.new("LocalScript", UI["5b"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor11.execute button \\ --
+UI["5f"] = Instance.new("LocalScript", UI["4d"])
+UI["5f"]["Name"] = [[execute button]]
+
+-- // StarterGui.ScreenGui.Frame.editor11.editor \\ --
+UI["60"] = Instance.new("TextBox", UI["4d"])
+UI["60"]["CursorPosition"] = -1
+UI["60"]["TextColor3"] = Color3.fromRGB(250, 250, 250)
+UI["60"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255)
+UI["60"]["ZIndex"] = 3
+UI["60"]["BorderSizePixel"] = 0
+UI["60"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["60"]["TextWrapped"] = true
+UI["60"]["TextSize"] = 12
+UI["60"]["Name"] = [[editor]]
+UI["60"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["60"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["60"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["60"]["Size"] = UDim2.new(0.93677, 0, 0.80378, 0)
+UI["60"]["Position"] = UDim2.new(0.02563, 0, -0.00059, 0)
+UI["60"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["60"]["Text"] = [[]]
+UI["60"]["BackgroundTransparency"] = 0.6
+
+-- // StarterGui.ScreenGui.Frame.editor11.editor.LocalScript \\ --
+UI["61"] = Instance.new("LocalScript", UI["60"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor11.editor.LocalScript \\ --
+UI["62"] = Instance.new("LocalScript", UI["60"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor11.inject \\ --
+UI["63"] = Instance.new("ImageButton", UI["4d"])
+UI["63"]["BorderSizePixel"] = 0
+UI["63"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["63"]["ImageColor3"] = Color3.fromRGB(128, 128, 128)
+UI["63"]["ZIndex"] = 4
+UI["63"]["Image"] = [[rbxassetid://140429137160242]]
+UI["63"]["Size"] = UDim2.new(0.06674, 0, 0.13475, 0)
+UI["63"]["BackgroundTransparency"] = 1
+UI["63"]["HoverImage"] = [[rbxassetid://130509165494432]]
+UI["63"]["Name"] = [[inject]]
+UI["63"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["63"]["Rotation"] = -180
+UI["63"]["Position"] = UDim2.new(0.90573, 0, 0.85945, 0)
+
+-- // StarterGui.ScreenGui.Frame.editor11.inject.UIAspectRatioConstraint \\ --
+UI["64"] = Instance.new("UIAspectRatioConstraint", UI["63"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor11.inject.LocalScript \\ --
+UI["65"] = Instance.new("LocalScript", UI["63"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor11.inject.LocalScript \\ --
+UI["66"] = Instance.new("LocalScript", UI["63"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor11.exit frame \\ --
+UI["67"] = Instance.new("ImageButton", UI["4d"])
+UI["67"]["BorderSizePixel"] = 0
+UI["67"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["67"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["67"]["ZIndex"] = 4
+UI["67"]["Image"] = [[rbxassetid://101553750173584]]
+UI["67"]["Size"] = UDim2.new(0.05504, 0, 0.11111, 0)
+UI["67"]["BackgroundTransparency"] = 1
+UI["67"]["Name"] = [[exit frame]]
+UI["67"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["67"]["Position"] = UDim2.new(0.78426, 0, -0.21884, 0)
+
+-- // StarterGui.ScreenGui.Frame.editor11.exit frame.UIAspectRatioConstraint \\ --
+UI["68"] = Instance.new("UIAspectRatioConstraint", UI["67"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor11.exit frame.LocalScript \\ --
+UI["69"] = Instance.new("LocalScript", UI["67"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor11.exit frame.LocalScript \\ --
+UI["6a"] = Instance.new("LocalScript", UI["67"])
+
+
+-- // StarterGui.ScreenGui.Frame.editor11.UIAspectRatioConstraint \\ --
+UI["6b"] = Instance.new("UIAspectRatioConstraint", UI["4d"])
+UI["6b"]["AspectRatio"] = 2.01891
+
+-- // StarterGui.ScreenGui.Frame.TextButton \\ --
+UI["6c"] = Instance.new("TextButton", UI["2"])
+UI["6c"]["TextWrapped"] = true
+UI["6c"]["BorderSizePixel"] = 0
+UI["6c"]["TextSize"] = 14
+UI["6c"]["TextColor3"] = Color3.fromRGB(173, 173, 173)
+UI["6c"]["TextScaled"] = true
+UI["6c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["6c"]["ZIndex"] = 3
+UI["6c"]["Size"] = UDim2.new(0.03248, 0, 0.06416, 0)
+UI["6c"]["BackgroundTransparency"] = 1
+UI["6c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6c"]["Text"] = [[X]]
+UI["6c"]["Position"] = UDim2.new(0.93937, 0, -0.00649, 0)
+
+-- // StarterGui.ScreenGui.Frame.TextButton.LocalScript \\ --
+UI["6d"] = Instance.new("LocalScript", UI["6c"])
+
+
+-- // StarterGui.ScreenGui.Frame.TextButton.LocalScript \\ --
+UI["6e"] = Instance.new("LocalScript", UI["6c"])
+
+
+-- // StarterGui.ScreenGui.Frame.TextButton.UIAspectRatioConstraint \\ --
+UI["6f"] = Instance.new("UIAspectRatioConstraint", UI["6c"])
+UI["6f"]["AspectRatio"] = 0.96552
+
+-- // StarterGui.ScreenGui.Frame.Thames \\ --
+UI["70"] = Instance.new("ImageButton", UI["2"])
+UI["70"]["BorderSizePixel"] = 0
+UI["70"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["70"]["ImageColor3"] = Color3.fromRGB(128, 128, 128)
+UI["70"]["ZIndex"] = 3
+UI["70"]["Image"] = [[rbxassetid://117807991584192]]
+UI["70"]["Size"] = UDim2.new(0.04988, 0, 0.09513, 0)
+UI["70"]["BackgroundTransparency"] = 1
+UI["70"]["HoverImage"] = [[rbxassetid://114031376565275]]
+UI["70"]["Name"] = [[Thames]]
+UI["70"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["70"]["Position"] = UDim2.new(0.48699, 0, -0.13972, 0)
+
+-- // StarterGui.ScreenGui.Frame.Thames.UIAspectRatioConstraint \\ --
+UI["71"] = Instance.new("UIAspectRatioConstraint", UI["70"])
+
+
+-- // StarterGui.ScreenGui.Frame.Thames.LocalScript \\ --
+UI["72"] = Instance.new("LocalScript", UI["70"])
+
+
+-- // StarterGui.ScreenGui.Frame.Thames.glow \\ --
+UI["73"] = Instance.new("ImageLabel", UI["70"])
+UI["73"]["ZIndex"] = 2
+UI["73"]["BorderSizePixel"] = 0
+UI["73"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["73"]["ImageTransparency"] = 0.68
+UI["73"]["ImageColor3"] = Color3.fromRGB(168, 127, 255)
+UI["73"]["Image"] = [[rbxassetid://115894189790727]]
+UI["73"]["Size"] = UDim2.new(0, 85, 0, 74)
+UI["73"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["73"]["BackgroundTransparency"] = 1
+UI["73"]["Name"] = [[glow]]
+UI["73"]["Position"] = UDim2.new(-0.46939, 0, -0.36119, 0)
+
+-- // StarterGui.ScreenGui.Frame.Thames.LocalScript \\ --
+UI["74"] = Instance.new("LocalScript", UI["70"])
+
+
+-- // StarterGui.ScreenGui.Frame.wallpeper2 \\ --
+UI["75"] = Instance.new("ImageLabel", UI["2"])
+UI["75"]["ZIndex"] = 5
+UI["75"]["BorderSizePixel"] = 0
+UI["75"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["75"]["ImageTransparency"] = 0.65
+UI["75"]["Size"] = UDim2.new(1, 0, 1.02212, 0)
+UI["75"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["75"]["BackgroundTransparency"] = 1
+UI["75"]["Name"] = [[wallpeper2]]
+UI["75"]["Position"] = UDim2.new(-0.00022, 0, -0.00343, 0)
+
+-- // StarterGui.ScreenGui.Frame.wallpeper2.UIAspectRatioConstraint \\ --
+UI["76"] = Instance.new("UIAspectRatioConstraint", UI["75"])
+UI["76"]["AspectRatio"] = 1.8658
+
+-- // StarterGui.ScreenGui.Frame.Frame \\ --
+UI["77"] = Instance.new("Frame", UI["2"])
+UI["77"]["BorderSizePixel"] = 0
+UI["77"]["BackgroundColor3"] = Color3.fromRGB(5, 14, 23)
+UI["77"]["Size"] = UDim2.new(0.98144, 0, 0.12168, 0)
+UI["77"]["Position"] = UDim2.new(0.00815, 0, -0.14652, 0)
+UI["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui.Frame.Frame.UICorner \\ --
+UI["78"] = Instance.new("UICorner", UI["77"])
+
+
+-- // StarterGui.ScreenGui.Frame.Frame.LocalScript \\ --
+UI["79"] = Instance.new("LocalScript", UI["77"])
+
+
+-- // StarterGui.ScreenGui.Frame.Frame.UIAspectRatioConstraint \\ --
+UI["7a"] = Instance.new("UIAspectRatioConstraint", UI["77"])
+UI["7a"]["AspectRatio"] = 15.38182
+
+-- // StarterGui.ScreenGui.Frame.AI \\ --
+UI["7b"] = Instance.new("ImageButton", UI["2"])
+UI["7b"]["BorderSizePixel"] = 0
+UI["7b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["7b"]["ImageColor3"] = Color3.fromRGB(128, 128, 128)
+UI["7b"]["ZIndex"] = 3
+UI["7b"]["Image"] = [[rbxassetid://137399986943624]]
+UI["7b"]["Size"] = UDim2.new(0.0522, 0, 0.16593, 0)
+UI["7b"]["BackgroundTransparency"] = 1
+UI["7b"]["Name"] = [[AI]]
+UI["7b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7b"]["Position"] = UDim2.new(0.65805, 0, -0.1744, 0)
+
+-- // StarterGui.ScreenGui.Frame.AI.glow \\ --
+UI["7c"] = Instance.new("ImageLabel", UI["7b"])
+UI["7c"]["ZIndex"] = 2
+UI["7c"]["BorderSizePixel"] = 0
+UI["7c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["7c"]["ImageTransparency"] = 0.68
+UI["7c"]["ImageColor3"] = Color3.fromRGB(240, 198, 255)
+UI["7c"]["Image"] = [[rbxassetid://115894189790727]]
+UI["7c"]["Size"] = UDim2.new(1.86667, 0, 1.06667, 0)
+UI["7c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7c"]["BackgroundTransparency"] = 1
+UI["7c"]["Name"] = [[glow]]
+UI["7c"]["Position"] = UDim2.new(-0.43931, 0, -0.00522, 0)
+
+-- // StarterGui.ScreenGui.Frame.AI.glow.UIAspectRatioConstraint \\ --
+UI["7d"] = Instance.new("UIAspectRatioConstraint", UI["7c"])
+UI["7d"]["AspectRatio"] = 1.05
+
+-- // StarterGui.ScreenGui.Frame.AI.LocalScript \\ --
+UI["7e"] = Instance.new("LocalScript", UI["7b"])
+
+
+-- // StarterGui.ScreenGui.Frame.AI.LocalScript \\ --
+UI["7f"] = Instance.new("LocalScript", UI["7b"])
+
+
+-- // StarterGui.ScreenGui.Frame.AI.UIAspectRatioConstraint \\ --
+UI["80"] = Instance.new("UIAspectRatioConstraint", UI["7b"])
+UI["80"]["AspectRatio"] = 0.6
+
+-- // StarterGui.ScreenGui.Frame.LocalScript \\ --
+UI["81"] = Instance.new("LocalScript", UI["2"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts \\ --
+UI["82"] = Instance.new("Frame", UI["2"])
+UI["82"]["Visible"] = false
+UI["82"]["ZIndex"] = 3
+UI["82"]["BorderSizePixel"] = 0
+UI["82"]["BackgroundColor3"] = Color3.fromRGB(5, 14, 23)
+UI["82"]["Size"] = UDim2.new(0.99072, 0, 0.90708, 0)
+UI["82"]["Position"] = UDim2.new(0.00815, 0, 0.06254, 0)
+UI["82"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["82"]["Name"] = [[scripts]]
+
+-- // StarterGui.ScreenGui.Frame.scripts.TextLabel \\ --
+UI["83"] = Instance.new("TextLabel", UI["82"])
+UI["83"]["TextWrapped"] = true
+UI["83"]["ZIndex"] = 3
+UI["83"]["BorderSizePixel"] = 0
+UI["83"]["TextScaled"] = true
+UI["83"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["83"]["TextSize"] = 14
+UI["83"]["FontFace"] = Font.new([[rbxassetid://16658254058]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["83"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["83"]["BackgroundTransparency"] = 1
+UI["83"]["Size"] = UDim2.new(0.24239, 0, 0.15366, 0)
+UI["83"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["83"]["Text"] = [[scripts  ]]
+UI["83"]["Position"] = UDim2.new(0.37594, 0, 0.10974, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.TextLabel.UIGradient \\ --
+UI["84"] = Instance.new("UIGradient", UI["83"])
+UI["84"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.TextLabel.UIGradient.LocalScript \\ --
+UI["85"] = Instance.new("LocalScript", UI["84"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.TextLabel \\ --
+UI["86"] = Instance.new("TextLabel", UI["82"])
+UI["86"]["TextWrapped"] = true
+UI["86"]["ZIndex"] = 3
+UI["86"]["BorderSizePixel"] = 0
+UI["86"]["TextScaled"] = true
+UI["86"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["86"]["TextSize"] = 14
+UI["86"]["FontFace"] = Font.new([[rbxassetid://16658254058]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["86"]["TextColor3"] = Color3.fromRGB(219, 219, 219)
+UI["86"]["BackgroundTransparency"] = 1
+UI["86"]["Size"] = UDim2.new(0.21429, 0, 0.09024, 0)
+UI["86"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["86"]["Text"] = [[wellcome to]]
+UI["86"]["Position"] = UDim2.new(0.36942, 0, 0.0181, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.exit frame \\ --
+UI["87"] = Instance.new("ImageButton", UI["82"])
+UI["87"]["BorderSizePixel"] = 0
+UI["87"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["87"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["87"]["ZIndex"] = 2
+UI["87"]["Image"] = [[rbxassetid://101553750173584]]
+UI["87"]["Size"] = UDim2.new(0.05504, 0, 0.11463, 0)
+UI["87"]["BackgroundTransparency"] = 1
+UI["87"]["Name"] = [[exit frame]]
+UI["87"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["87"]["Position"] = UDim2.new(0.77855, 0, -0.22337, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.exit frame.UIAspectRatioConstraint \\ --
+UI["88"] = Instance.new("UIAspectRatioConstraint", UI["87"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.exit frame.LocalScript \\ --
+UI["89"] = Instance.new("LocalScript", UI["87"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.exit frame.LocalScript \\ --
+UI["8a"] = Instance.new("LocalScript", UI["87"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame \\ --
+UI["8b"] = Instance.new("ScrollingFrame", UI["82"])
+UI["8b"]["Active"] = true
+UI["8b"]["BorderSizePixel"] = 0
+UI["8b"]["CanvasSize"] = UDim2.new(0, 0, 2.1, 0)
+UI["8b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8b"]["Size"] = UDim2.new(0.98712, 0, 0.70976, 0)
+UI["8b"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8b"]["Position"] = UDim2.new(0.01235, 0, 0.29023, 0)
+UI["8b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8b"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel \\ --
+UI["8c"] = Instance.new("ImageLabel", UI["8b"])
+UI["8c"]["ZIndex"] = 3
+UI["8c"]["BorderSizePixel"] = 0
+UI["8c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8c"]["Image"] = [[rbxassetid://74408550827651]]
+UI["8c"]["Size"] = UDim2.new(0, 225, 0, 140)
+UI["8c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8c"]["Position"] = UDim2.new(0.1, 0, 0.32258, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UICorner \\ --
+UI["8d"] = Instance.new("UICorner", UI["8c"])
+UI["8d"]["CornerRadius"] = UDim.new(0, 15)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame \\ --
+UI["8e"] = Instance.new("Frame", UI["8c"])
+UI["8e"]["ZIndex"] = 3
+UI["8e"]["BorderSizePixel"] = 0
+UI["8e"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23)
+UI["8e"]["Size"] = UDim2.new(0, 241, 0, 38)
+UI["8e"]["Position"] = UDim2.new(-0.03778, 0, 0.72808, 0)
+UI["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UICorner \\ --
+UI["8f"] = Instance.new("UICorner", UI["8e"])
+UI["8f"]["CornerRadius"] = UDim.new(0, 15)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke \\ --
+UI["90"] = Instance.new("UIStroke", UI["8e"])
+UI["90"]["Thickness"] = 2
+UI["90"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient \\ --
+UI["91"] = Instance.new("UIGradient", UI["90"])
+UI["91"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient.LocalScript \\ --
+UI["92"] = Instance.new("LocalScript", UI["91"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.TextLabel \\ --
+UI["93"] = Instance.new("TextLabel", UI["8e"])
+UI["93"]["TextWrapped"] = true
+UI["93"]["ZIndex"] = 5
+UI["93"]["BorderSizePixel"] = 0
+UI["93"]["TextScaled"] = true
+UI["93"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["93"]["TextSize"] = 14
+UI["93"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["93"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["93"]["BackgroundTransparency"] = 1
+UI["93"]["Size"] = UDim2.new(0, 181, 0, 26)
+UI["93"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["93"]["Text"] = [[speed x]]
+UI["93"]["Position"] = UDim2.new(0.13394, 0, 0.13222, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke \\ --
+UI["94"] = Instance.new("UIStroke", UI["8c"])
+UI["94"]["Thickness"] = 2
+UI["94"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient \\ --
+UI["95"] = Instance.new("UIGradient", UI["94"])
+UI["95"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient.LocalScript \\ --
+UI["96"] = Instance.new("LocalScript", UI["95"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script \\ --
+UI["97"] = Instance.new("ImageButton", UI["8c"])
+UI["97"]["BorderSizePixel"] = 0
+UI["97"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["97"]["ZIndex"] = 3
+UI["97"]["Image"] = [[rbxassetid://97800227761718]]
+UI["97"]["Size"] = UDim2.new(0, 106, 0, 66)
+UI["97"]["BackgroundTransparency"] = 1
+UI["97"]["Name"] = [[play script]]
+UI["97"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["97"]["Position"] = UDim2.new(0.24231, 0, 1.09479, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient \\ --
+UI["98"] = Instance.new("UIGradient", UI["97"])
+UI["98"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(94, 151, 255))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient.LocalScript \\ --
+UI["99"] = Instance.new("LocalScript", UI["98"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.LocalScript \\ --
+UI["9a"] = Instance.new("LocalScript", UI["97"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.UIGridLayout \\ --
+UI["9b"] = Instance.new("UIGridLayout", UI["8b"])
+UI["9b"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center
+UI["9b"]["CellSize"] = UDim2.new(0, 206, 0, 104)
+UI["9b"]["SortOrder"] = Enum.SortOrder.LayoutOrder
+UI["9b"]["CellPadding"] = UDim2.new(0, 80, 0, 120)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel \\ --
+UI["9c"] = Instance.new("ImageLabel", UI["8b"])
+UI["9c"]["ZIndex"] = 3
+UI["9c"]["BorderSizePixel"] = 0
+UI["9c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["9c"]["Image"] = [[rbxassetid://132215247294817]]
+UI["9c"]["Size"] = UDim2.new(0, 225, 0, 140)
+UI["9c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9c"]["Position"] = UDim2.new(0.1, 0, 0.32258, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UICorner \\ --
+UI["9d"] = Instance.new("UICorner", UI["9c"])
+UI["9d"]["CornerRadius"] = UDim.new(0, 15)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame \\ --
+UI["9e"] = Instance.new("Frame", UI["9c"])
+UI["9e"]["ZIndex"] = 3
+UI["9e"]["BorderSizePixel"] = 0
+UI["9e"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23)
+UI["9e"]["Size"] = UDim2.new(0, 241, 0, 38)
+UI["9e"]["Position"] = UDim2.new(-0.03778, 0, 0.72808, 0)
+UI["9e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UICorner \\ --
+UI["9f"] = Instance.new("UICorner", UI["9e"])
+UI["9f"]["CornerRadius"] = UDim.new(0, 15)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke \\ --
+UI["a0"] = Instance.new("UIStroke", UI["9e"])
+UI["a0"]["Thickness"] = 2
+UI["a0"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient \\ --
+UI["a1"] = Instance.new("UIGradient", UI["a0"])
+UI["a1"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient.LocalScript \\ --
+UI["a2"] = Instance.new("LocalScript", UI["a1"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.TextLabel \\ --
+UI["a3"] = Instance.new("TextLabel", UI["9e"])
+UI["a3"]["TextWrapped"] = true
+UI["a3"]["ZIndex"] = 5
+UI["a3"]["BorderSizePixel"] = 0
+UI["a3"]["TextScaled"] = true
+UI["a3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a3"]["TextSize"] = 14
+UI["a3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["a3"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a3"]["BackgroundTransparency"] = 1
+UI["a3"]["Size"] = UDim2.new(0, 181, 0, 26)
+UI["a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a3"]["Text"] = [[redz hub]]
+UI["a3"]["Position"] = UDim2.new(0.13394, 0, 0.13222, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke \\ --
+UI["a4"] = Instance.new("UIStroke", UI["9c"])
+UI["a4"]["Thickness"] = 2
+UI["a4"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient \\ --
+UI["a5"] = Instance.new("UIGradient", UI["a4"])
+UI["a5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient.LocalScript \\ --
+UI["a6"] = Instance.new("LocalScript", UI["a5"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script \\ --
+UI["a7"] = Instance.new("ImageButton", UI["9c"])
+UI["a7"]["BorderSizePixel"] = 0
+UI["a7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a7"]["ZIndex"] = 3
+UI["a7"]["Image"] = [[rbxassetid://97800227761718]]
+UI["a7"]["Size"] = UDim2.new(0, 106, 0, 66)
+UI["a7"]["BackgroundTransparency"] = 1
+UI["a7"]["Name"] = [[play script]]
+UI["a7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a7"]["Position"] = UDim2.new(0.286, 0, 1.09479, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient \\ --
+UI["a8"] = Instance.new("UIGradient", UI["a7"])
+UI["a8"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(94, 151, 255))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient.LocalScript \\ --
+UI["a9"] = Instance.new("LocalScript", UI["a8"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.LocalScript \\ --
+UI["aa"] = Instance.new("LocalScript", UI["a7"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel \\ --
+UI["ab"] = Instance.new("ImageLabel", UI["8b"])
+UI["ab"]["ZIndex"] = 3
+UI["ab"]["BorderSizePixel"] = 0
+UI["ab"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["ab"]["Image"] = [[rbxassetid://95152304299407]]
+UI["ab"]["Size"] = UDim2.new(0, 225, 0, 140)
+UI["ab"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ab"]["Position"] = UDim2.new(0.1, 0, 0.32258, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UICorner \\ --
+UI["ac"] = Instance.new("UICorner", UI["ab"])
+UI["ac"]["CornerRadius"] = UDim.new(0, 15)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame \\ --
+UI["ad"] = Instance.new("Frame", UI["ab"])
+UI["ad"]["ZIndex"] = 3
+UI["ad"]["BorderSizePixel"] = 0
+UI["ad"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23)
+UI["ad"]["Size"] = UDim2.new(0, 241, 0, 38)
+UI["ad"]["Position"] = UDim2.new(-0.03778, 0, 0.72808, 0)
+UI["ad"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UICorner \\ --
+UI["ae"] = Instance.new("UICorner", UI["ad"])
+UI["ae"]["CornerRadius"] = UDim.new(0, 15)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke \\ --
+UI["af"] = Instance.new("UIStroke", UI["ad"])
+UI["af"]["Thickness"] = 2
+UI["af"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient \\ --
+UI["b0"] = Instance.new("UIGradient", UI["af"])
+UI["b0"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient.LocalScript \\ --
+UI["b1"] = Instance.new("LocalScript", UI["b0"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.TextLabel \\ --
+UI["b2"] = Instance.new("TextLabel", UI["ad"])
+UI["b2"]["TextWrapped"] = true
+UI["b2"]["ZIndex"] = 5
+UI["b2"]["BorderSizePixel"] = 0
+UI["b2"]["TextScaled"] = true
+UI["b2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b2"]["TextSize"] = 14
+UI["b2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["b2"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b2"]["BackgroundTransparency"] = 1
+UI["b2"]["Size"] = UDim2.new(0, 181, 0, 26)
+UI["b2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b2"]["Text"] = [[Anti Kick By Oranium]]
+UI["b2"]["Position"] = UDim2.new(0.13394, 0, 0.13222, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke \\ --
+UI["b3"] = Instance.new("UIStroke", UI["ab"])
+UI["b3"]["Thickness"] = 2
+UI["b3"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient \\ --
+UI["b4"] = Instance.new("UIGradient", UI["b3"])
+UI["b4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient.LocalScript \\ --
+UI["b5"] = Instance.new("LocalScript", UI["b4"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script \\ --
+UI["b6"] = Instance.new("ImageButton", UI["ab"])
+UI["b6"]["BorderSizePixel"] = 0
+UI["b6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b6"]["ZIndex"] = 3
+UI["b6"]["Image"] = [[rbxassetid://97800227761718]]
+UI["b6"]["Size"] = UDim2.new(0, 106, 0, 66)
+UI["b6"]["BackgroundTransparency"] = 1
+UI["b6"]["Name"] = [[play script]]
+UI["b6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b6"]["Position"] = UDim2.new(0.24231, 0, 1.08517, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient \\ --
+UI["b7"] = Instance.new("UIGradient", UI["b6"])
+UI["b7"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(94, 151, 255))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient.LocalScript \\ --
+UI["b8"] = Instance.new("LocalScript", UI["b7"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.LocalScript \\ --
+UI["b9"] = Instance.new("LocalScript", UI["b6"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel \\ --
+UI["ba"] = Instance.new("ImageLabel", UI["8b"])
+UI["ba"]["ZIndex"] = 3
+UI["ba"]["BorderSizePixel"] = 0
+UI["ba"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["ba"]["Image"] = [[rbxassetid://95152304299407]]
+UI["ba"]["Size"] = UDim2.new(0, 225, 0, 140)
+UI["ba"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ba"]["Position"] = UDim2.new(0.1, 0, 0.32258, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UICorner \\ --
+UI["bb"] = Instance.new("UICorner", UI["ba"])
+UI["bb"]["CornerRadius"] = UDim.new(0, 15)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame \\ --
+UI["bc"] = Instance.new("Frame", UI["ba"])
+UI["bc"]["ZIndex"] = 3
+UI["bc"]["BorderSizePixel"] = 0
+UI["bc"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23)
+UI["bc"]["Size"] = UDim2.new(0, 241, 0, 38)
+UI["bc"]["Position"] = UDim2.new(-0.03778, 0, 0.72808, 0)
+UI["bc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UICorner \\ --
+UI["bd"] = Instance.new("UICorner", UI["bc"])
+UI["bd"]["CornerRadius"] = UDim.new(0, 15)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke \\ --
+UI["be"] = Instance.new("UIStroke", UI["bc"])
+UI["be"]["Thickness"] = 2
+UI["be"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient \\ --
+UI["bf"] = Instance.new("UIGradient", UI["be"])
+UI["bf"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient.LocalScript \\ --
+UI["c0"] = Instance.new("LocalScript", UI["bf"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.TextLabel \\ --
+UI["c1"] = Instance.new("TextLabel", UI["bc"])
+UI["c1"]["TextWrapped"] = true
+UI["c1"]["ZIndex"] = 5
+UI["c1"]["BorderSizePixel"] = 0
+UI["c1"]["TextScaled"] = true
+UI["c1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c1"]["TextSize"] = 14
+UI["c1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["c1"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c1"]["BackgroundTransparency"] = 1
+UI["c1"]["Size"] = UDim2.new(0, 181, 0, 26)
+UI["c1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c1"]["Text"] = [[infinty yeld]]
+UI["c1"]["Position"] = UDim2.new(0.13394, 0, 0.13222, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke \\ --
+UI["c2"] = Instance.new("UIStroke", UI["ba"])
+UI["c2"]["Thickness"] = 2
+UI["c2"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient \\ --
+UI["c3"] = Instance.new("UIGradient", UI["c2"])
+UI["c3"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient.LocalScript \\ --
+UI["c4"] = Instance.new("LocalScript", UI["c3"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script \\ --
+UI["c5"] = Instance.new("ImageButton", UI["ba"])
+UI["c5"]["BorderSizePixel"] = 0
+UI["c5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c5"]["ZIndex"] = 3
+UI["c5"]["Image"] = [[rbxassetid://97800227761718]]
+UI["c5"]["Size"] = UDim2.new(0, 106, 0, 66)
+UI["c5"]["BackgroundTransparency"] = 1
+UI["c5"]["Name"] = [[play script]]
+UI["c5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c5"]["Position"] = UDim2.new(0.24231, 0, 1.08517, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient \\ --
+UI["c6"] = Instance.new("UIGradient", UI["c5"])
+UI["c6"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(94, 151, 255))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient.LocalScript \\ --
+UI["c7"] = Instance.new("LocalScript", UI["c6"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.LocalScript \\ --
+UI["c8"] = Instance.new("LocalScript", UI["c5"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel \\ --
+UI["c9"] = Instance.new("ImageLabel", UI["8b"])
+UI["c9"]["ZIndex"] = 3
+UI["c9"]["BorderSizePixel"] = 0
+UI["c9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c9"]["Image"] = [[rbxassetid://95152304299407]]
+UI["c9"]["Size"] = UDim2.new(0, 225, 0, 140)
+UI["c9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c9"]["Position"] = UDim2.new(0.1, 0, 0.32258, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UICorner \\ --
+UI["ca"] = Instance.new("UICorner", UI["c9"])
+UI["ca"]["CornerRadius"] = UDim.new(0, 15)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame \\ --
+UI["cb"] = Instance.new("Frame", UI["c9"])
+UI["cb"]["ZIndex"] = 3
+UI["cb"]["BorderSizePixel"] = 0
+UI["cb"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23)
+UI["cb"]["Size"] = UDim2.new(0, 241, 0, 38)
+UI["cb"]["Position"] = UDim2.new(-0.03778, 0, 0.72808, 0)
+UI["cb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UICorner \\ --
+UI["cc"] = Instance.new("UICorner", UI["cb"])
+UI["cc"]["CornerRadius"] = UDim.new(0, 15)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke \\ --
+UI["cd"] = Instance.new("UIStroke", UI["cb"])
+UI["cd"]["Thickness"] = 2
+UI["cd"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient \\ --
+UI["ce"] = Instance.new("UIGradient", UI["cd"])
+UI["ce"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient.LocalScript \\ --
+UI["cf"] = Instance.new("LocalScript", UI["ce"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.TextLabel \\ --
+UI["d0"] = Instance.new("TextLabel", UI["cb"])
+UI["d0"]["TextWrapped"] = true
+UI["d0"]["ZIndex"] = 5
+UI["d0"]["BorderSizePixel"] = 0
+UI["d0"]["TextScaled"] = true
+UI["d0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d0"]["TextSize"] = 14
+UI["d0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["d0"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d0"]["BackgroundTransparency"] = 1
+UI["d0"]["Size"] = UDim2.new(0, 181, 0, 26)
+UI["d0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d0"]["Text"] = [[hitbox script]]
+UI["d0"]["Position"] = UDim2.new(0.12149, 0, 0.13222, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke \\ --
+UI["d1"] = Instance.new("UIStroke", UI["c9"])
+UI["d1"]["Thickness"] = 2
+UI["d1"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient \\ --
+UI["d2"] = Instance.new("UIGradient", UI["d1"])
+UI["d2"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient.LocalScript \\ --
+UI["d3"] = Instance.new("LocalScript", UI["d2"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script \\ --
+UI["d4"] = Instance.new("ImageButton", UI["c9"])
+UI["d4"]["BorderSizePixel"] = 0
+UI["d4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d4"]["ZIndex"] = 3
+UI["d4"]["Image"] = [[rbxassetid://97800227761718]]
+UI["d4"]["Size"] = UDim2.new(0, 106, 0, 66)
+UI["d4"]["BackgroundTransparency"] = 1
+UI["d4"]["Name"] = [[play script]]
+UI["d4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d4"]["Position"] = UDim2.new(0.24231, 0, 1.08517, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient \\ --
+UI["d5"] = Instance.new("UIGradient", UI["d4"])
+UI["d5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(94, 151, 255))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient.LocalScript \\ --
+UI["d6"] = Instance.new("LocalScript", UI["d5"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.LocalScript \\ --
+UI["d7"] = Instance.new("LocalScript", UI["d4"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel \\ --
+UI["d8"] = Instance.new("ImageLabel", UI["8b"])
+UI["d8"]["ZIndex"] = 3
+UI["d8"]["BorderSizePixel"] = 0
+UI["d8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d8"]["Image"] = [[rbxassetid://94777586897262]]
+UI["d8"]["Size"] = UDim2.new(0, 225, 0, 140)
+UI["d8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d8"]["Position"] = UDim2.new(0.1, 0, 0.32258, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UICorner \\ --
+UI["d9"] = Instance.new("UICorner", UI["d8"])
+UI["d9"]["CornerRadius"] = UDim.new(0, 15)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame \\ --
+UI["da"] = Instance.new("Frame", UI["d8"])
+UI["da"]["ZIndex"] = 3
+UI["da"]["BorderSizePixel"] = 0
+UI["da"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23)
+UI["da"]["Size"] = UDim2.new(0, 241, 0, 38)
+UI["da"]["Position"] = UDim2.new(-0.03778, 0, 0.72808, 0)
+UI["da"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UICorner \\ --
+UI["db"] = Instance.new("UICorner", UI["da"])
+UI["db"]["CornerRadius"] = UDim.new(0, 15)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke \\ --
+UI["dc"] = Instance.new("UIStroke", UI["da"])
+UI["dc"]["Thickness"] = 2
+UI["dc"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient \\ --
+UI["dd"] = Instance.new("UIGradient", UI["dc"])
+UI["dd"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient.LocalScript \\ --
+UI["de"] = Instance.new("LocalScript", UI["dd"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.TextLabel \\ --
+UI["df"] = Instance.new("TextLabel", UI["da"])
+UI["df"]["TextWrapped"] = true
+UI["df"]["ZIndex"] = 5
+UI["df"]["BorderSizePixel"] = 0
+UI["df"]["TextScaled"] = true
+UI["df"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["df"]["TextSize"] = 14
+UI["df"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["df"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["df"]["BackgroundTransparency"] = 1
+UI["df"]["Size"] = UDim2.new(0, 181, 0, 26)
+UI["df"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["df"]["Text"] = [[the hunt]]
+UI["df"]["Position"] = UDim2.new(0.12149, 0, 0.13222, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke \\ --
+UI["e0"] = Instance.new("UIStroke", UI["d8"])
+UI["e0"]["Thickness"] = 2
+UI["e0"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient \\ --
+UI["e1"] = Instance.new("UIGradient", UI["e0"])
+UI["e1"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient.LocalScript \\ --
+UI["e2"] = Instance.new("LocalScript", UI["e1"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script \\ --
+UI["e3"] = Instance.new("ImageButton", UI["d8"])
+UI["e3"]["BorderSizePixel"] = 0
+UI["e3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e3"]["ZIndex"] = 3
+UI["e3"]["Image"] = [[rbxassetid://97800227761718]]
+UI["e3"]["Size"] = UDim2.new(0, 106, 0, 66)
+UI["e3"]["BackgroundTransparency"] = 1
+UI["e3"]["Name"] = [[play script]]
+UI["e3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e3"]["Position"] = UDim2.new(0.24231, 0, 1.08517, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient \\ --
+UI["e4"] = Instance.new("UIGradient", UI["e3"])
+UI["e4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(94, 151, 255))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient.LocalScript \\ --
+UI["e5"] = Instance.new("LocalScript", UI["e4"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.LocalScript \\ --
+UI["e6"] = Instance.new("LocalScript", UI["e3"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel \\ --
+UI["e7"] = Instance.new("ImageLabel", UI["8b"])
+UI["e7"]["ZIndex"] = 3
+UI["e7"]["BorderSizePixel"] = 0
+UI["e7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e7"]["Image"] = [[rbxassetid://98705436434056]]
+UI["e7"]["Size"] = UDim2.new(0, 225, 0, 140)
+UI["e7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e7"]["Position"] = UDim2.new(0.1, 0, 0.32258, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UICorner \\ --
+UI["e8"] = Instance.new("UICorner", UI["e7"])
+UI["e8"]["CornerRadius"] = UDim.new(0, 15)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame \\ --
+UI["e9"] = Instance.new("Frame", UI["e7"])
+UI["e9"]["ZIndex"] = 3
+UI["e9"]["BorderSizePixel"] = 0
+UI["e9"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23)
+UI["e9"]["Size"] = UDim2.new(1.1699, 0, 0.36538, 0)
+UI["e9"]["Position"] = UDim2.new(-0.03778, 0, 0.72808, 0)
+UI["e9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UICorner \\ --
+UI["ea"] = Instance.new("UICorner", UI["e9"])
+UI["ea"]["CornerRadius"] = UDim.new(0, 15)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke \\ --
+UI["eb"] = Instance.new("UIStroke", UI["e9"])
+UI["eb"]["Thickness"] = 2
+UI["eb"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient \\ --
+UI["ec"] = Instance.new("UIGradient", UI["eb"])
+UI["ec"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient.LocalScript \\ --
+UI["ed"] = Instance.new("LocalScript", UI["ec"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.TextLabel \\ --
+UI["ee"] = Instance.new("TextLabel", UI["e9"])
+UI["ee"]["TextWrapped"] = true
+UI["ee"]["ZIndex"] = 5
+UI["ee"]["BorderSizePixel"] = 0
+UI["ee"]["TextScaled"] = true
+UI["ee"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["ee"]["TextSize"] = 14
+UI["ee"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["ee"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["ee"]["BackgroundTransparency"] = 1
+UI["ee"]["Size"] = UDim2.new(0.75104, 0, 0.68421, 0)
+UI["ee"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ee"]["Text"] = [[kaiser style ! -- and more]]
+UI["ee"]["Position"] = UDim2.new(0.12149, 0, 0.13222, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke \\ --
+UI["ef"] = Instance.new("UIStroke", UI["e7"])
+UI["ef"]["Thickness"] = 2
+UI["ef"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient \\ --
+UI["f0"] = Instance.new("UIGradient", UI["ef"])
+UI["f0"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient.LocalScript \\ --
+UI["f1"] = Instance.new("LocalScript", UI["f0"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script \\ --
+UI["f2"] = Instance.new("ImageButton", UI["e7"])
+UI["f2"]["BorderSizePixel"] = 0
+UI["f2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["f2"]["ZIndex"] = 3
+UI["f2"]["Image"] = [[rbxassetid://97800227761718]]
+UI["f2"]["Size"] = UDim2.new(0.51456, 0, 0.63462, 0)
+UI["f2"]["BackgroundTransparency"] = 1
+UI["f2"]["Name"] = [[play script]]
+UI["f2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f2"]["Position"] = UDim2.new(0.24231, 0, 1.08517, 0)
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient \\ --
+UI["f3"] = Instance.new("UIGradient", UI["f2"])
+UI["f3"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(207, 207, 207)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(94, 151, 255))}
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient.LocalScript \\ --
+UI["f4"] = Instance.new("LocalScript", UI["f3"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.LocalScript \\ --
+UI["f5"] = Instance.new("LocalScript", UI["f2"])
+
+
+-- // StarterGui.ScreenGui.Frame.scripts.UIAspectRatioConstraint \\ --
+UI["f6"] = Instance.new("UIAspectRatioConstraint", UI["82"])
+UI["f6"]["AspectRatio"] = 2.08293
+
+-- // StarterGui.ScreenGui.Frame.AI1 \\ --
+UI["f7"] = Instance.new("Frame", UI["2"])
+UI["f7"]["Visible"] = false
+UI["f7"]["ZIndex"] = 3
+UI["f7"]["BorderSizePixel"] = 0
+UI["f7"]["BackgroundColor3"] = Color3.fromRGB(5, 14, 23)
+UI["f7"]["Size"] = UDim2.new(0.99072, 0, 0.92257, 0)
+UI["f7"]["Position"] = UDim2.new(0.00351, 0, 0.06254, 0)
+UI["f7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f7"]["Name"] = [[AI1]]
+
+-- // StarterGui.ScreenGui.Frame.AI1.ImageLabel \\ --
+UI["f8"] = Instance.new("ImageLabel", UI["f7"])
+UI["f8"]["ZIndex"] = 3
+UI["f8"]["BorderSizePixel"] = 0
+UI["f8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["f8"]["ImageTransparency"] = 0.86
+UI["f8"]["Image"] = [[rbxassetid://75943458954151]]
+UI["f8"]["Size"] = UDim2.new(1.00585, 0, 1.08393, 0)
+UI["f8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f8"]["BackgroundTransparency"] = 1
+UI["f8"]["Position"] = UDim2.new(-0.00035, 0, -0.06852, 0)
+
+-- // StarterGui.ScreenGui.Frame.AI1.ImageLabel \\ --
+UI["f9"] = Instance.new("ImageLabel", UI["f7"])
+UI["f9"]["ZIndex"] = 3
+UI["f9"]["BorderSizePixel"] = 0
+UI["f9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["f9"]["Image"] = [[rbxassetid://139808080574533]]
+UI["f9"]["Size"] = UDim2.new(0.39578, 0, 0.81055, 0)
+UI["f9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f9"]["BackgroundTransparency"] = 1
+UI["f9"]["Rotation"] = -13
+UI["f9"]["Position"] = UDim2.new(0.01956, 0, 0.06781, 0)
+
+-- // StarterGui.ScreenGui.Frame.AI1.ImageLabel.LocalScript \\ --
+UI["fa"] = Instance.new("LocalScript", UI["f9"])
+
+
+-- // StarterGui.ScreenGui.Frame.AI1.ImageLabel.LocalScript \\ --
+UI["fb"] = Instance.new("LocalScript", UI["f9"])
+
+
+-- // StarterGui.ScreenGui.Frame.AI1.ImageLabel.glow \\ --
+UI["fc"] = Instance.new("ImageLabel", UI["f9"])
+UI["fc"]["ZIndex"] = 3
+UI["fc"]["BorderSizePixel"] = 0
+UI["fc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["fc"]["ImageTransparency"] = 0.68
+UI["fc"]["ImageColor3"] = Color3.fromRGB(203, 156, 255)
+UI["fc"]["Image"] = [[rbxassetid://115894189790727]]
+UI["fc"]["Size"] = UDim2.new(0, 539, 0, 486)
+UI["fc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["fc"]["BackgroundTransparency"] = 1
+UI["fc"]["Name"] = [[glow]]
+UI["fc"]["Position"] = UDim2.new(-0.3054, 0, -0.15411, 0)
+
+-- // StarterGui.ScreenGui.Frame.AI1.TextLabel \\ --
+UI["fd"] = Instance.new("TextLabel", UI["f7"])
+UI["fd"]["TextWrapped"] = true
+UI["fd"]["ZIndex"] = 3
+UI["fd"]["BorderSizePixel"] = 0
+UI["fd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["fd"]["TextSize"] = 65
+UI["fd"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["fd"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["fd"]["BackgroundTransparency"] = 1
+UI["fd"]["Size"] = UDim2.new(0.4274, 0, 0.1199, 0)
+UI["fd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["fd"]["Text"] = [[AI Soon ..]]
+UI["fd"]["Position"] = UDim2.new(0.36651, 0, 0.40048, 0)
+
+-- // StarterGui.ScreenGui.Frame.AI1.TextLabel.UIGradient \\ --
+UI["fe"] = Instance.new("UIGradient", UI["fd"])
+UI["fe"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(171, 0, 255)),ColorSequenceKeypoint.new(0.125, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.176, Color3.fromRGB(226, 165, 255)),ColorSequenceKeypoint.new(0.370, Color3.fromRGB(171, 0, 255)),ColorSequenceKeypoint.new(0.405, Color3.fromRGB(61, 6, 91)),ColorSequenceKeypoint.new(0.429, Color3.fromRGB(171, 0, 255)),ColorSequenceKeypoint.new(0.460, Color3.fromRGB(118, 10, 172)),ColorSequenceKeypoint.new(0.528, Color3.fromRGB(93, 29, 128)),ColorSequenceKeypoint.new(0.657, Color3.fromRGB(171, 0, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(86, 86, 255))}
+
+-- // StarterGui.ScreenGui.Frame.AI1.TextLabel.UIGradient.LocalScript \\ --
+UI["ff"] = Instance.new("LocalScript", UI["fe"])
+
+
+-- // StarterGui.ScreenGui.Frame.AI1.exit frame \\ --
+UI["100"] = Instance.new("ImageButton", UI["f7"])
+UI["100"]["BorderSizePixel"] = 0
+UI["100"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["100"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["100"]["ZIndex"] = 4
+UI["100"]["Image"] = [[rbxassetid://101553750173584]]
+UI["100"]["Size"] = UDim2.new(0.05504, 0, 0.11271, 0)
+UI["100"]["BackgroundTransparency"] = 1
+UI["100"]["Name"] = [[exit frame]]
+UI["100"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["100"]["Position"] = UDim2.new(0.78426, 0, -0.21884, 0)
+
+-- // StarterGui.ScreenGui.Frame.AI1.exit frame.UIAspectRatioConstraint \\ --
+UI["101"] = Instance.new("UIAspectRatioConstraint", UI["100"])
+
+
+-- // StarterGui.ScreenGui.Frame.AI1.exit frame.LocalScript \\ --
+UI["102"] = Instance.new("LocalScript", UI["100"])
+
+
+-- // StarterGui.ScreenGui.Frame.AI1.exit frame.LocalScript \\ --
+UI["103"] = Instance.new("LocalScript", UI["100"])
+
+
+-- // StarterGui.ScreenGui.Frame.AI1.UIAspectRatioConstraint \\ --
+UI["104"] = Instance.new("UIAspectRatioConstraint", UI["f7"])
+UI["104"]["AspectRatio"] = 2.04796
+
+-- // StarterGui.ScreenGui.Frame.console \\ --
+UI["105"] = Instance.new("ImageButton", UI["2"])
+UI["105"]["BorderSizePixel"] = 0
+UI["105"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["105"]["ImageColor3"] = Color3.fromRGB(128, 128, 128)
+UI["105"]["ZIndex"] = 3
+UI["105"]["Image"] = [[rbxassetid://72195715669876]]
+UI["105"]["Size"] = UDim2.new(0.06613, 0, 0.11283, 0)
+UI["105"]["BackgroundTransparency"] = 1
+UI["105"]["Name"] = [[console]]
+UI["105"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["105"]["Position"] = UDim2.new(0.56196, 0, -0.13972, 0)
+
+-- // StarterGui.ScreenGui.Frame.console.glow \\ --
+UI["106"] = Instance.new("ImageLabel", UI["105"])
+UI["106"]["ZIndex"] = 2
+UI["106"]["BorderSizePixel"] = 0
+UI["106"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["106"]["ImageTransparency"] = 0.68
+UI["106"]["ImageColor3"] = Color3.fromRGB(168, 127, 255)
+UI["106"]["Image"] = [[rbxassetid://115894189790727]]
+UI["106"]["Size"] = UDim2.new(0, 86, 0, 82)
+UI["106"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["106"]["BackgroundTransparency"] = 1
+UI["106"]["Name"] = [[glow]]
+UI["106"]["Position"] = UDim2.new(-0.32375, 0, -0.36119, 0)
+
+-- // StarterGui.ScreenGui.Frame.console.LocalScript \\ --
+UI["107"] = Instance.new("LocalScript", UI["105"])
+
+
+-- // StarterGui.ScreenGui.Frame.console.LocalScript \\ --
+UI["108"] = Instance.new("LocalScript", UI["105"])
+
+
+-- // StarterGui.ScreenGui.Frame.console.UIAspectRatioConstraint \\ --
+UI["109"] = Instance.new("UIAspectRatioConstraint", UI["105"])
+UI["109"]["AspectRatio"] = 1.11765
+
+-- // StarterGui.ScreenGui.Frame.console1 \\ --
+UI["10a"] = Instance.new("Frame", UI["2"])
+UI["10a"]["Visible"] = false
+UI["10a"]["ZIndex"] = 3
+UI["10a"]["BorderSizePixel"] = 0
+UI["10a"]["BackgroundColor3"] = Color3.fromRGB(5, 14, 23)
+UI["10a"]["Size"] = UDim2.new(0.99072, 0, 0.93584, 0)
+UI["10a"]["Position"] = UDim2.new(0.00815, 0, 0.06254, 0)
+UI["10a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["10a"]["Name"] = [[console1]]
+
+-- // StarterGui.ScreenGui.Frame.console1.ScrollingFrame \\ --
+UI["10b"] = Instance.new("ScrollingFrame", UI["10a"])
+UI["10b"]["Active"] = true
+UI["10b"]["ZIndex"] = 3
+UI["10b"]["BorderSizePixel"] = 0
+UI["10b"]["CanvasSize"] = UDim2.new(0, 0, 5, 0)
+UI["10b"]["ElasticBehavior"] = Enum.ElasticBehavior.Always
+UI["10b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["10b"]["HorizontalScrollBarInset"] = Enum.ScrollBarInset.Always
+UI["10b"]["Size"] = UDim2.new(0.97658, 0, 0.96927, 0)
+UI["10b"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["10b"]["Position"] = UDim2.new(0.00853, 0, -0.00025, 0)
+UI["10b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["10b"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.ScreenGui.Frame.console1.ScrollingFrame.consele \\ --
+UI["10c"] = Instance.new("TextBox", UI["10b"])
+UI["10c"]["CursorPosition"] = -1
+UI["10c"]["TextColor3"] = Color3.fromRGB(128, 128, 128)
+UI["10c"]["ZIndex"] = 3
+UI["10c"]["BorderSizePixel"] = 0
+UI["10c"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["10c"]["TextSize"] = 17
+UI["10c"]["Name"] = [[consele]]
+UI["10c"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["10c"]["BackgroundColor3"] = Color3.fromRGB(164, 164, 164)
+UI["10c"]["FontFace"] = Font.new([[rbxassetid://12187377099]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["10c"]["Size"] = UDim2.new(0, 834, 0, 2100)
+UI["10c"]["Position"] = UDim2.new(-0.00432, 0, 0, 0)
+UI["10c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["10c"]["Text"] = [[]]
+UI["10c"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.ScreenGui.Frame.console1.ScrollingFrame.consele.LocalScript \\ --
+UI["10d"] = Instance.new("LocalScript", UI["10c"])
+
+
+-- // StarterGui.ScreenGui.Frame.console1.ScrollingFrame.UIStroke \\ --
+UI["10e"] = Instance.new("UIStroke", UI["10b"])
+UI["10e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["10e"]["Color"] = Color3.fromRGB(35, 35, 35)
+
+-- // StarterGui.ScreenGui.Frame.console1.exit frame \\ --
+UI["10f"] = Instance.new("ImageButton", UI["10a"])
+UI["10f"]["BorderSizePixel"] = 0
+UI["10f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["10f"]["ImageColor3"] = Color3.fromRGB(131, 131, 131)
+UI["10f"]["ZIndex"] = 4
+UI["10f"]["Image"] = [[rbxassetid://101553750173584]]
+UI["10f"]["Size"] = UDim2.new(0.05504, 0, 0.11111, 0)
+UI["10f"]["BackgroundTransparency"] = 1
+UI["10f"]["Name"] = [[exit frame]]
+UI["10f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["10f"]["Position"] = UDim2.new(0.78426, 0, -0.21884, 0)
+
+-- // StarterGui.ScreenGui.Frame.console1.exit frame.UIAspectRatioConstraint \\ --
+UI["110"] = Instance.new("UIAspectRatioConstraint", UI["10f"])
+
+
+-- // StarterGui.ScreenGui.Frame.console1.exit frame.LocalScript \\ --
+UI["111"] = Instance.new("LocalScript", UI["10f"])
+
+
+-- // StarterGui.ScreenGui.Frame.console1.exit frame.LocalScript \\ --
+UI["112"] = Instance.new("LocalScript", UI["10f"])
+
+
+-- // StarterGui.ScreenGui.Frame.console1.UIAspectRatioConstraint \\ --
+UI["113"] = Instance.new("UIAspectRatioConstraint", UI["10a"])
+UI["113"]["AspectRatio"] = 2.01891
+
+-- // StarterGui.ScreenGui.Frame.UIAspectRatioConstraint \\ --
+UI["114"] = Instance.new("UIAspectRatioConstraint", UI["2"])
+UI["114"]["AspectRatio"] = 1.90708
+
+-- // StarterGui.ScreenGui.LocalScript \\ --
+UI["115"] = Instance.new("LocalScript", UI["1"])
+
+
+-- // StarterGui.ScreenGui.toggle \\ --
+UI["116"] = Instance.new("ImageButton", UI["1"])
+UI["116"]["BorderSizePixel"] = 0
+UI["116"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["116"]["Image"] = [[rbxassetid://89473454828644]]
+UI["116"]["Size"] = UDim2.new(0, 64, 0, 64)
+UI["116"]["Name"] = [[toggle]]
+UI["116"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["116"]["Position"] = UDim2.new(0.06737, 0, 0.11258, 0)
+
+-- // StarterGui.ScreenGui.toggle.glow \\ --
+UI["117"] = Instance.new("ImageLabel", UI["116"])
+UI["117"]["BorderSizePixel"] = 0
+UI["117"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["117"]["Image"] = [[rbxassetid://95152304299407]]
+UI["117"]["Size"] = UDim2.new(0, 64, 0, 64)
+UI["117"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["117"]["BackgroundTransparency"] = 1
+UI["117"]["Name"] = [[glow]]
+UI["117"]["Position"] = UDim2.new(-0.01137, 0, -0.0025, 0)
+
+-- // StarterGui.ScreenGui.toggle.glow.UICorner \\ --
+UI["118"] = Instance.new("UICorner", UI["117"])
+UI["118"]["CornerRadius"] = UDim.new(0, 40)
+
+-- // StarterGui.ScreenGui.toggle.LocalScript \\ --
+UI["119"] = Instance.new("LocalScript", UI["116"])
+
+
+-- // StarterGui.ScreenGui.toggle.UICorner \\ --
+UI["11a"] = Instance.new("UICorner", UI["116"])
+UI["11a"]["CornerRadius"] = UDim.new(0, 50)
+
+-- // StarterGui.ScreenGui.toggle.LocalScript \\ --
+UI["11b"] = Instance.new("LocalScript", UI["116"])
+
+
+-- // StarterGui.ScreenGui.toggle.LocalScript \\ --
+UI["11c"] = Instance.new("LocalScript", UI["116"])
+
+
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.LocalScript \\ --
+local function SCRIPT_e()
+local script = UI["e"]
+	local player = game.Players.LocalPlayer -- الحصول على اللاعب الحالي
+	local textLabel = script.Parent -- تحديد TextLabel
+	
+	textLabel.Text = player.Name -- تغيير النص بالكامل إلى اسم اللاعب
+	
+end
+task.spawn(SCRIPT_e)
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.UIGradient.LocalScript \\ --
+local function SCRIPT_10()
+local script = UI["10"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+	
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+	
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+	
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+	
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+	
+	
+end
+task.spawn(SCRIPT_10)
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.TextButton.LocalScript \\ --
+local function SCRIPT_1c()
+local script = UI["1c"]
+	button = script.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+			Title = "Oranium discord server", -- Required
+			Text = "discord.gg/MQ8uFW4a", -- Required
+			Icon = "rbxassetid://77346728133778" -- Optional
+		})
+		button.Parent.Parent.Spiral.Enabled = false
+		button.Parent.Parent.Swimmingpool.Enabled = false
+		button.Parent.Parent.Building.Enabled = false
+		button.Parent.Parent.Trails.Enabled = false
+		button.Parent.Parent.stairs.Enabled = false
+	end)
+end
+task.spawn(SCRIPT_1c)
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.TextButton.copy script \\ --
+local function SCRIPT_1d()
+local script = UI["1d"]
+	local button = script.Parent -- تأكد أن هذا السكربت موضوع داخل الزر
+	local link = "https://discord.gg/MQ8uFW4a" -- ضع الرابط الذي تريد نسخه
+	
+	button.MouseButton1Click:Connect(function()
+		if setclipboard then
+			setclipboard(link)
+			print("link in clipoard") -- يمكنك استبدالها بتنبيه للاعب
+		else
+			warn("error")
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_1d)
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.UIGradient.LocalScript \\ --
+local function SCRIPT_2a()
+local script = UI["2a"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+	
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+	
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+	
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+	
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+	
+	
+end
+task.spawn(SCRIPT_2a)
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.LocalScript \\ --
+local function SCRIPT_2b()
+local script = UI["2b"]
+	local player = game.Players.LocalPlayer -- الحصول على اللاعب الحالي
+	local textLabel = script.Parent -- تحديد TextLabel
+	
+	textLabel.Text = player.Name -- تغيير النص بالكامل إلى اسم اللاعب
+	
+end
+task.spawn(SCRIPT_2b)
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.LocalScript \\ --
+local function SCRIPT_2d()
+local script = UI["2d"]
+	-- الحصول على اللاعب الحالي
+	local player = game.Players.LocalPlayer
+	
+	-- تحديد الـ TextLabel
+	local textLabel = script.Parent
+	
+	-- التحقق من ID اللاعب وتغيير النص بناءً على ذلك
+	if player.UserId == 1527285140 then  -- ضع الـ ID الخاص باللاعب
+		textLabel.Text = "Owner Oranium♟"
+	elseif player.UserId == 3887093067 then  -- ضع الـ ID الخاص باللاعب
+		textLabel.Text = "Admin Oranium🔨"
+	elseif player.UserId == 1804150685 then  -- ضع الـ ID الخاص باللاعب
+		textLabel.Text = "Tester Oranium💻"
+	else
+		textLabel.Text = "Player Oranium" -- النص الافتراضي في حالة عدم التطابق
+	end
+	
+end
+task.spawn(SCRIPT_2d)
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.UIGradient.LocalScript \\ --
+local function SCRIPT_30()
+local script = UI["30"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+	
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+	
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+	
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+	
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+	
+	
+end
+task.spawn(SCRIPT_30)
+-- // StarterGui.ScreenGui.Frame.Frame.TextLabel.LocalScript \\ --
+local function SCRIPT_31()
+local script = UI["31"]
+	local textLabel = script.Parent -- تأكد أن TextLabel موجود في مكان مناسب داخل الزر أو الواجهة
+	
+	-- الحصول على اسم اللعبة
+	local gameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+	
+	-- تعيين النص لاسم اللعبة
+	textLabel.Text = gameName
+	
+end
+task.spawn(SCRIPT_31)
+-- // StarterGui.ScreenGui.Frame.Frame.Frame.ImageLabel.LocalScript \\ --
+local function SCRIPT_35()
+local script = UI["35"]
+	local player = game.Players.LocalPlayer -- الحصول على اللاعب الحالي
+	local imageLabel = script.Parent -- تحديد الـ ImageLabel
+	
+	-- تغيير الصورة إلى صورة وجه اللاعب فقط
+	imageLabel.Image = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. player.UserId .. "&width=420&height=420&format=png"
+	
+end
+task.spawn(SCRIPT_35)
+-- // StarterGui.ScreenGui.Frame.home.LocalScript \\ --
+local function SCRIPT_3f()
+local script = UI["3f"]
+	local imageButton = script.Parent  -- تحديد الـ ImageButton
+	local originalColor = imageButton.ImageColor3  -- حفظ اللون الأصلي للصورة
+	local glowImage = imageButton:FindFirstChild("glow")  -- البحث عن عنصر الصورة glow
+	
+	-- التأكد من أن الصورة glow موجودة
+	if glowImage then
+		glowImage.ImageTransparency = 1  -- إخفاء الصورة في البداية
+	end
+	
+	-- عند مرور الماوس على الزر
+	imageButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأبيض بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+	
+		-- جعل صورة glow تظهر بسلاسة
+		if glowImage then
+			game:GetService("TweenService"):Create(glowImage, TweenInfo.new(0.3), {ImageTransparency = 0.68}):Play()
+		end
+	end)
+	
+	-- عند مغادرة الماوس للزر
+	imageButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = originalColor}):Play()
+	
+		-- إخفاء صورة glow بسلاسة
+		if glowImage then
+			game:GetService("TweenService"):Create(glowImage, TweenInfo.new(0.3), {ImageTransparency = 1}):Play()
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_3f)
+-- // StarterGui.ScreenGui.Frame.editor2.LocalScript \\ --
+local function SCRIPT_43()
+local script = UI["43"]
+	local Frame = script.Parent.Parent.editor11
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = true
+	end)
+end
+task.spawn(SCRIPT_43)
+-- // StarterGui.ScreenGui.Frame.editor2.LocalScript \\ --
+local function SCRIPT_45()
+local script = UI["45"]
+	local imageButton = script.Parent  -- تحديد الـ ImageButton
+	local originalColor = imageButton.ImageColor3  -- حفظ اللون الأصلي للصورة
+	local glowImage = imageButton:FindFirstChild("glow")  -- البحث عن عنصر الصورة glow
+	
+	-- التأكد من أن الصورة glow موجودة
+	if glowImage then
+		glowImage.ImageTransparency = 1  -- إخفاء الصورة في البداية
+	end
+	
+	-- عند مرور الماوس على الزر
+	imageButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأبيض بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+	
+		-- جعل صورة glow تظهر بسلاسة
+		if glowImage then
+			game:GetService("TweenService"):Create(glowImage, TweenInfo.new(0.3), {ImageTransparency = 0.68}):Play()
+		end
+	end)
+	
+	-- عند مغادرة الماوس للزر
+	imageButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = originalColor}):Play()
+	
+		-- إخفاء صورة glow بسلاسة
+		if glowImage then
+			game:GetService("TweenService"):Create(glowImage, TweenInfo.new(0.3), {ImageTransparency = 1}):Play()
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_45)
+-- // StarterGui.ScreenGui.Frame.scripts cloud.LocalScript \\ --
+local function SCRIPT_47()
+local script = UI["47"]
+	local Frame = script.Parent.Parent.scripts
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = true
+	end)
+end
+task.spawn(SCRIPT_47)
+-- // StarterGui.ScreenGui.Frame.scripts cloud.LocalScript \\ --
+local function SCRIPT_49()
+local script = UI["49"]
+	local imageButton = script.Parent  -- تحديد الـ ImageButton
+	local originalColor = imageButton.ImageColor3  -- حفظ اللون الأصلي للصورة
+	local glowImage = imageButton:FindFirstChild("glow")  -- البحث عن عنصر الصورة glow
+	
+	-- التأكد من أن الصورة glow موجودة
+	if glowImage then
+		glowImage.ImageTransparency = 1  -- إخفاء الصورة في البداية
+	end
+	
+	-- عند مرور الماوس على الزر
+	imageButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأبيض بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+	
+		-- جعل صورة glow تظهر بسلاسة
+		if glowImage then
+			game:GetService("TweenService"):Create(glowImage, TweenInfo.new(0.3), {ImageTransparency = 0.68}):Play()
+		end
+	end)
+	
+	-- عند مغادرة الماوس للزر
+	imageButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = originalColor}):Play()
+	
+		-- إخفاء صورة glow بسلاسة
+		if glowImage then
+			game:GetService("TweenService"):Create(glowImage, TweenInfo.new(0.3), {ImageTransparency = 1}):Play()
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_49)
+-- // StarterGui.ScreenGui.Frame.editor11.Delete button \\ --
+local function SCRIPT_4e()
+local script = UI["4e"]
+	local textBox = script.Parent:WaitForChild("editor") -- تأكد أن TextBox داخل الزر
+	local executeButton = script.Parent:WaitForChild("execute") -- تأكد أن TextButton داخل الزر
+	
+	executeButton.MouseButton1Click:Connect(function()
+		local code = textBox.Text -- الحصول على النص (الكود) من TextBox
+		local success, errorMessage = pcall(function()
+			loadstring(code)() -- تنفيذ الكود باستخدام loadstring
+		end)
+	
+		if not success then
+			warn("Error executing code: " .. errorMessage)
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_4e)
+-- // StarterGui.ScreenGui.Frame.editor11.Renjoin.LocalScript \\ --
+local function SCRIPT_51()
+local script = UI["51"]
+	local textButton = script.Parent  -- تحديد الـ TextButton
+	local originalColor = textButton.TextColor3  -- حفظ اللون الأصلي للنص
+	
+	-- عند مرور الماوس على الزر
+	textButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأحمر بسلاسة
+		game:GetService("TweenService"):Create(textButton, TweenInfo.new(0.3), {TextColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+	end)
+	
+	-- عند مغادرة الماوس للزر
+	textButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي للنص بسلاسة
+		game:GetService("TweenService"):Create(textButton, TweenInfo.new(0.3), {TextColor3 = originalColor}):Play()
+	end)
+	
+end
+task.spawn(SCRIPT_51)
+-- // StarterGui.ScreenGui.Frame.editor11.Renjoin.LocalScript \\ --
+local function SCRIPT_52()
+local script = UI["52"]
+	local button = script.Parent  -- تحديد الزر
+	local player = game.Players.LocalPlayer  -- الحصول على اللاعب الحالي
+	local TeleportService = game:GetService("TeleportService")  -- الحصول على خدمة النقل
+	local playerGui = player:WaitForChild("PlayerGui")  -- الوصول إلى واجهة المستخدم للاعب
+	
+	-- عند الضغط على الزر
+	button.MouseButton1Click:Connect(function()
+		-- عرض الإشعار للاعب
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Rejoining...",  -- عنوان الإشعار
+			Text = "You are being rejoined to a new server. Please wait.",  -- نص الإشعار
+			Icon = "rbxassetid://77346728133778"  -- أيقونة (اختياري)
+		})
+
+		-- استخدام TeleportService للانتقال إلى سيرفر جديد ضمن نفس اللعبة
+		local success, errorMessage = pcall(function()
+			TeleportService:Teleport(game.PlaceId, player)  -- إعادة توجيه اللاعب إلى سيرفر جديد في نفس اللعبة
+		end)
+
+		if not success then
+			warn("فشل في نقل اللاعب: " .. errorMessage)
+		end
+	end)
+
+end
+task.spawn(SCRIPT_52)
+-- // StarterGui.ScreenGui.Frame.editor11.execute.LocalScript \\ --
+local function SCRIPT_55()
+	local script = UI["55"]
+	button = script.Parent
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+			Title = "Exucute", -- Required
+			Text = "Oranium has been Exucute your script", -- Required
+			Icon = "rbxassetid://77346728133778" -- Optional
+		})
+		button.Parent.Parent.Spiral.Enabled = false
+		button.Parent.Parent.Swimmingpool.Enabled = false
+		button.Parent.Parent.Building.Enabled = false
+		button.Parent.Parent.Trails.Enabled = false
+		button.Parent.Parent.stairs.Enabled = false
+	end)
+end
+task.spawn(SCRIPT_55)
+-- // StarterGui.ScreenGui.Frame.editor11.execute.LocalScript \\ --
+local function SCRIPT_56()
+	local script = UI["56"]
+	local imageButton = script.Parent  -- تحديد الـ ImageButton
+	local originalColor = imageButton.ImageColor3  -- حفظ اللون الأصلي للصورة
+
+	-- عند مرور الماوس على الزر
+	imageButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأبيض بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+	end)
+
+	-- عند مغادرة الماوس للزر
+	imageButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = originalColor}):Play()
+	end)
+
+end
+task.spawn(SCRIPT_56)
+-- // StarterGui.ScreenGui.Frame.editor11.copy.anim \\ --
+local function SCRIPT_59()
+	local script = UI["59"]
+	local imageButton = script.Parent  -- تحديد الـ ImageButton
+	local originalColor = imageButton.ImageColor3  -- حفظ اللون الأصلي للصورة
+
+	-- عند مرور الماوس على الزر
+	imageButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأبيض بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+	end)
+
+	-- عند مغادرة الماوس للزر
+	imageButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = originalColor}):Play()
+	end)
+
+end
+task.spawn(SCRIPT_59)
+-- // StarterGui.ScreenGui.Frame.editor11.copy.copy script \\ --
+local function SCRIPT_5a()
+	local script = UI["5a"]
+	local button = script.Parent -- زر النسخ
+	local textBox = script.Parent.Parent:WaitForChild("editor") -- الـ TextBox الذي سيتم نسخ النص منه
+
+	button.MouseButton1Click:Connect(function()
+		if textBox.Text and textBox.Text ~= "" then
+			setclipboard(textBox.Text) -- نسخ النص إلى الحافظة
+			print("✅ تم نسخ النص: " .. textBox.Text)
+		else
+			warn("⚠️ لا يوجد نص لنسخه!")
+		end
+	end)
+
+end
+task.spawn(SCRIPT_5a)
+-- // StarterGui.ScreenGui.Frame.editor11.clear.LocalScript \\ --
+local function SCRIPT_5d()
+	local script = UI["5d"]
+	local imageButton = script.Parent  -- تحديد الـ ImageButton
+	local originalColor = imageButton.ImageColor3  -- حفظ اللون الأصلي للصورة
+
+	-- عند مرور الماوس على الزر
+	imageButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأبيض بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+	end)
+
+	-- عند مغادرة الماوس للزر
+	imageButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = originalColor}):Play()
+	end)
+
+end
+task.spawn(SCRIPT_5d)
+-- // StarterGui.ScreenGui.Frame.editor11.clear.LocalScript \\ --
+local function SCRIPT_5e()
+	local script = UI["5e"]
+	-- سكربت زر "delet"
+	local deleteButton = script.Parent  -- الوصول إلى الزر
+	local textBox = deleteButton.Parent:WaitForChild("editor")  -- الوصول إلى الـ TextBox
+
+	deleteButton.MouseButton1Click:Connect(function()
+		textBox.Text = ""  -- مسح النص داخل الـ TextBox
+	end)
+
+end
+task.spawn(SCRIPT_5e)
+-- // StarterGui.ScreenGui.Frame.editor11.execute button \\ --
+local function SCRIPT_5f()
+	local script = UI["5f"]
+	-- الوصول إلى العناصر
+	local button = script.Parent:WaitForChild("ExecuteButton") -- زر التنفيذ
+	local scrollFrame = script.Parent:WaitForChild("frame"):WaitForChild("scrollframe") -- الوصول إلى الـ ScrollFrame
+	local textBox = scrollFrame:WaitForChild("editor") -- الوصول إلى الـ TextBox
+
+	button.MouseButton1Click:Connect(function()
+		local codeToExecute = textBox.Text -- جلب النص المدخل من المستخدم
+
+		-- التأكد من أن النص المدخل ليس فارغًا
+		if codeToExecute and codeToExecute ~= "" then
+			-- تنفيذ الأكواد المدخلة
+			local success, result = pcall(function()
+				local func = loadstring(codeToExecute) -- تحميل الكود
+				if func then
+					return func() -- تشغيل الكود إذا كان صالحًا
+				else
+					error("تعذر تحميل الكود.") -- رسالة خطأ إذا لم يكن الكود صالحًا
+				end
+			end)
+
+			if success then
+				print("✅ تم تنفيذ الكود بنجاح!")
+			else
+				warn("❌ حدث خطأ أثناء تنفيذ الكود: " .. tostring(result))
+			end
+		else
+			warn("⚠️ لم يتم إدخال أي كود في الـ TextBox!")
+		end
+	end)
+
+end
+task.spawn(SCRIPT_5f)
+-- // StarterGui.ScreenGui.Frame.editor11.editor.LocalScript \\ --
+local function SCRIPT_61()
+	local script = UI["61"]
+	local UserInputService = game:GetService("UserInputService")
+	local consoleBox = script.Parent -- الح��و�� ��لى ا
+	consoleBox.ClearTextOnFocus = false -- م��ع ��ذ�� ا��نص ��ند
+	consoleBox.Text = "  -- Wellcome to Oranium "
+
+	-- ل�� ��ت�� م��ح ��لنص ع��د ��لتر
+	consoleBox.ClearTextOnFocus = false
+
+	-- Listen for the Enter key press
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		if input.KeyCode == Enum.KeyCode.Return and not gameProcessed then
+			consoleBox.Text = consoleBox.Text .. "\n" -- Add a new line
+		end
+	end)
+
+end
+task.spawn(SCRIPT_61)
+-- // StarterGui.ScreenGui.Frame.editor11.editor.LocalScript \\ --
+local function SCRIPT_62()
+	local script = UI["62"]
+	local textBox = script.Parent
+	local UserInputService = game:GetService("UserInputService")
+
+	-- الإكمال التلقائي للأكواد
+	local autoCompletePairs = {
+		[""] = "",
+		["("] = ")\n    ",
+		["print "] = "('')\    ",
+		["for "] = "do\n    \nend"
+
+	}
+
+	-- الإكمال التلقائي للأقواس والاقتباسات
+	local brackets = {
+		["("] = ")",
+		["{"] = "}",
+		["["] = "]",
+		["\""] = "\"",
+		["'"] = "'"
+	}
+
+	-- عند تغيير النص في التكست بوكس
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		local text = textBox.Text
+		local cursorPosition = textBox.CursorPosition
+
+		-- إكمال تلقائي عند كتابة كلمات مفتاحية
+		for key, value in pairs(autoCompletePairs) do
+			if text:sub(-#key) == key then
+				textBox.Text = text .. value
+				textBox.CursorPosition = cursorPosition + 1
+			end
+		end
+	end)
+
+	-- عند إدخال حرف معين
+	textBox.InputBegan:Connect(function(input, gameProcessed)
+		if gameProcessed then return end
+
+		local cursorPosition = textBox.CursorPosition
+		local text = textBox.Text
+
+		-- عند كتابة الأقواس والاقتباسات
+		if brackets[input.KeyCode.Name] then
+			local closeChar = brackets[input.KeyCode.Name]
+			textBox.Text = text:sub(1, cursorPosition - 1) .. input.KeyCode.Name .. closeChar .. text:sub(cursorPosition)
+			textBox.CursorPosition = cursorPosition + 1
+		end
+
+		-- عند الضغط على Tab يتم إدخال مسافات بدلاً من التنقل بين العناصر
+		if input.KeyCode == Enum.KeyCode.Tab then
+			textBox.Text = text:sub(1, cursorPosition - 1) .. "    " .. text:sub(cursorPosition)
+			textBox.CursorPosition = cursorPosition + 4
+		end
+
+		-- عند الضغط على Enter يتم إضافة مسافة تلقائية (Auto Indentation)
+		if input.KeyCode == Enum.KeyCode.Return then
+			local lines = {}
+			for line in text:gmatch("[^\r\n]+") do
+				table.insert(lines, line)
+			end
+
+			local lastLine = lines[#lines] or ""
+			local spaces = lastLine:match("^(%s*)") or ""
+
+			textBox.Text = text .. "\n" .. spaces
+			textBox.CursorPosition = #textBox.Text + 1
+		end
+
+		-- عند الضغط على Ctrl + / يتم إضافة تعليق `--`
+		if input.KeyCode == Enum.KeyCode.Slash and UserInputService:IsKeyDown(Enum.KeyCode.LeftControl) then
+			local lines = {}
+			for line in text:gmatch("[^\r\n]+") do
+				table.insert(lines, line)
+			end
+
+			local newText = ""
+			for i, line in ipairs(lines) do
+				if i == cursorPosition then
+					newText = newText .. "-- " .. line .. "\n"
+				else
+					newText = newText .. line .. "\n"
+				end
+			end
+
+			textBox.Text = newText
+		end
+	end)
+
+	-- حذف ذكي للأقواس الفارغة
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		local cursorPosition = textBox.CursorPosition
+		if cursorPosition > 1 then
+			local prevChar = textBox.Text:sub(cursorPosition - 1, cursorPosition - 1)
+			local nextChar = textBox.Text:sub(cursorPosition, cursorPosition)
+
+			if brackets[prevChar] and brackets[prevChar] == nextChar then
+				textBox.Text = textBox.Text:sub(1, cursorPosition - 2) .. textBox.Text:sub(cursorPosition + 1)
+				textBox.CursorPosition = cursorPosition - 1
+			end
+		end
+	end)
+
+end
+task.spawn(SCRIPT_62)
+-- // StarterGui.ScreenGui.Frame.editor11.inject.LocalScript \\ --
+local function SCRIPT_65()
+	local script = UI["65"]
+	local imageButton = script.Parent  -- تحديد الـ ImageButton
+	local originalColor = imageButton.ImageColor3  -- حفظ اللون الأصلي للصورة
+
+	-- عند مرور الماوس على الزر
+	imageButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأبيض بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+	end)
+
+	-- عند مغادرة الماوس للزر
+	imageButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = originalColor}):Play()
+	end)
+
+end
+task.spawn(SCRIPT_65)
+-- // StarterGui.ScreenGui.Frame.editor11.inject.LocalScript \\ --
+local function SCRIPT_66()
+	local script = UI["66"]
+	button = script.Parent
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+			Title = "Oranium", -- Required
+			Text = "Oranium has been injected", -- Required
+			Icon = "rbxassetid://77346728133778" -- Optional
+		})
+		button.Parent.Parent.Spiral.Enabled = false
+		button.Parent.Parent.Swimmingpool.Enabled = false
+		button.Parent.Parent.Building.Enabled = false
+		button.Parent.Parent.Trails.Enabled = false
+		button.Parent.Parent.stairs.Enabled = false
+	end)
+end
+task.spawn(SCRIPT_66)
+-- // StarterGui.ScreenGui.Frame.editor11.exit frame.LocalScript \\ --
+local function SCRIPT_69()
+	local script = UI["69"]
+	local imageButton = script.Parent  -- تحديد الـ ImageButton
+	local originalColor = imageButton.ImageColor3  -- حفظ اللون الأصلي للصورة
+
+	-- عند مرور الماوس على الزر
+	imageButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأبيض بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(175, 206, 255)}):Play()
+	end)
+
+	-- عند مغادرة الماوس للزر
+	imageButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = originalColor}):Play()
+	end)
+
+end
+task.spawn(SCRIPT_69)
+-- // StarterGui.ScreenGui.Frame.editor11.exit frame.LocalScript \\ --
+local function SCRIPT_6a()
+	local script = UI["6a"]
+	local Frame = script.Parent.Parent
+
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+end
+task.spawn(SCRIPT_6a)
+-- // StarterGui.ScreenGui.Frame.TextButton.LocalScript \\ --
+local function SCRIPT_6d()
+	local script = UI["6d"]
+	local textButton = script.Parent  -- تحديد الـ TextButton
+	local originalColor = textButton.TextColor3  -- حفظ اللون الأصلي للنص
+
+	-- عند مرور الماوس على الزر
+	textButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأحمر بسلاسة
+		game:GetService("TweenService"):Create(textButton, TweenInfo.new(0.3), {TextColor3 = Color3.fromRGB(255, 0, 0)}):Play()
+	end)
+
+	-- عند مغادرة الماوس للزر
+	textButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي للنص بسلاسة
+		game:GetService("TweenService"):Create(textButton, TweenInfo.new(0.3), {TextColor3 = originalColor}):Play()
+	end)
+
+end
+task.spawn(SCRIPT_6d)
+-- // StarterGui.ScreenGui.Frame.TextButton.LocalScript \\ --
+local function SCRIPT_6e()
+	local script = UI["6e"]
+	local Frame = script.Parent.Parent
+
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+end
+task.spawn(SCRIPT_6e)
+-- // StarterGui.ScreenGui.Frame.Thames.LocalScript \\ --
+local function SCRIPT_72()
+	local script = UI["72"]
+	local button = script.Parent  -- الزر الذي داخل الـ Frame
+	local imageLabel = button.Parent:WaitForChild("wallpeper2")  -- الصورة الموجودة داخل الفريم
+
+	-- قائمة تحتوي على خمسة روابط عشوائية
+	local imageIDs = {
+		"rbxassetid://100328330456386",  -- الرابط الأول
+		"rbxassetid://92270132470305",  -- الرابط الثاني
+		"rbxassetid://128068860266720",  -- الرابط الثالث
+		"rbxassetid://74154582073966",
+		"rbxassetid://110474355034652",
+		"rbxassetid://75223048339125",
+		"rbxassetid://132068508056920",
+		"rbxassetid://78761636541382",
+		"rbxassetid://123086539918120",
+		"rbxassetid://83688398685924",
+		"rbxassetid://129028018411451",
+		"rbxassetid://119005878873059",
+		"rbxassetid://124281243783048",
+		"rbxassetid://94783477571112",
+		"rbxassetid://139297914153447",
+		"rbxassetid://129647738847117",
+		"rbxassetid://77653479786824",
+		"rbxassetid://119596430730943",
+		"rbxassetid://83060564851698",
+		"rbxassetid://73122441380506",
+		"rbxassetid://83871191105216",
+		"rbxassetid://108570933317725",
+		"rbxassetid://82571005293735",
+		"rbxassetid://100457222757674",
+		"rbxassetid://84346167797103",
+		"rbxassetid://81718595746262",
+		"rbxassetid://101459538804819",
+		"rbxassetid://138087173070849",
+		"rbxassetid://113991897464042",
+		"rbxassetid://82872409022741",
+		"rbxassetid://113991897464042",
+		"rbxassetid://135212128588608",
+		"rbxassetid://113991897464042",
+		"rbxassetid://99563036103280",
+		"rbxassetid://100128200135163",
+		"rbxassetid://104725404362718",
+		"rbxassetid://127236540008784",
+		"rbxassetid://124457773076176",
+		"rbxassetid://121235177961524",
+		"rbxassetid://85326145723360",
+		"rbxassetid://135401331331472",
+		"rbxassetid://125246217806925",
+		-- الرابط الرابع
+		""   -- الرابط الخامس
+	}
+
+	local currentIndex = 1  -- تحديد البداية من الرابط الأول
+
+	button.MouseButton1Click:Connect(function()
+		-- تغيير الرابط للصورة إلى الرابط الحالي في القائمة
+		imageLabel.Image = imageIDs[currentIndex]
+
+		-- تحديث الـ index للانتقال إلى الرابط التالي
+		currentIndex = currentIndex + 1
+
+		-- إذا وصلنا إلى آخر رابط، نعيد البدء من الأول
+		if currentIndex > #imageIDs then
+			currentIndex = 1
+		end
+	end)
+
+end
+task.spawn(SCRIPT_72)
+-- // StarterGui.ScreenGui.Frame.Thames.LocalScript \\ --
+local function SCRIPT_74()
+	local script = UI["74"]
+	local imageButton = script.Parent  -- تحديد الـ ImageButton
+	local originalColor = imageButton.ImageColor3  -- حفظ اللون الأصلي للصورة
+	local glowImage = imageButton:FindFirstChild("glow")  -- البحث عن عنصر الصورة glow
+
+	-- التأكد من أن الصورة glow موجودة
+	if glowImage then
+		glowImage.ImageTransparency = 1  -- إخفاء الصورة في البداية
+	end
+
+	-- عند مرور الماوس على الزر
+	imageButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأبيض بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+
+		-- جعل صورة glow تظهر بسلاسة
+		if glowImage then
+			game:GetService("TweenService"):Create(glowImage, TweenInfo.new(0.3), {ImageTransparency = 0.68}):Play()
+		end
+	end)
+
+	-- عند مغادرة الماوس للزر
+	imageButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = originalColor}):Play()
+
+		-- إخفاء صورة glow بسلاسة
+		if glowImage then
+			game:GetService("TweenService"):Create(glowImage, TweenInfo.new(0.3), {ImageTransparency = 1}):Play()
+		end
+	end)
+
+end
+task.spawn(SCRIPT_74)
+-- // StarterGui.ScreenGui.Frame.Frame.LocalScript \\ --
+local function SCRIPT_79()
+	local script = UI["79"]
+	local frame = script.Parent  -- تحديد الفريم
+	local stroke = frame:FindFirstChild("UIStroke")  -- البحث عن UIStroke داخل الفريم
+	local tweenService = game:GetService("TweenService")  -- استدعاء TweenService
+
+	if stroke then
+		stroke.Transparency = 1  -- إخفاء الحد في البداية
+	end
+
+	-- عند الضغط على الفريم
+	frame.MouseButton1Click:Connect(function()
+		if stroke then
+			-- جعل الحد يظهر بتأثير تدريجي
+			local tween = tweenService:Create(stroke, TweenInfo.new(0.5, Enum.EasingStyle.Smooth, Enum.EasingDirection.Out), {Transparency = 0})
+			tween:Play()
+		end
+	end)
+
+	-- عند مغادرة الماوس للفريم
+	frame.MouseLeave:Connect(function()
+		if stroke then
+			-- جعل الحد يختفي بسلاسة
+			local tween = tweenService:Create(stroke, TweenInfo.new(0.5, Enum.EasingStyle.Smooth, Enum.EasingDirection.Out), {Transparency = 1})
+			tween:Play()
+		end
+	end)
+
+end
+task.spawn(SCRIPT_79)
+-- // StarterGui.ScreenGui.Frame.AI.LocalScript \\ --
+local function SCRIPT_7e()
+	local script = UI["7e"]
+	local imageButton = script.Parent  -- تحديد الـ ImageButton
+	local originalColor = imageButton.ImageColor3  -- حفظ اللون الأصلي للصورة
+	local glowImage = imageButton:FindFirstChild("glow")  -- البحث عن عنصر الصورة glow
+
+	-- التأكد من أن الصورة glow موجودة
+	if glowImage then
+		glowImage.ImageTransparency = 1  -- إخفاء الصورة في البداية
+	end
+
+	-- عند مرور الماوس على الزر
+	imageButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأبيض بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+
+		-- جعل صورة glow تظهر بسلاسة
+		if glowImage then
+			game:GetService("TweenService"):Create(glowImage, TweenInfo.new(0.3), {ImageTransparency = 0.68}):Play()
+		end
+	end)
+
+	-- عند مغادرة الماوس للزر
+	imageButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = originalColor}):Play()
+
+		-- إخفاء صورة glow بسلاسة
+		if glowImage then
+			game:GetService("TweenService"):Create(glowImage, TweenInfo.new(0.3), {ImageTransparency = 1}):Play()
+		end
+	end)
+
+end
+task.spawn(SCRIPT_7e)
+-- // StarterGui.ScreenGui.Frame.AI.LocalScript \\ --
+local function SCRIPT_7f()
+	local script = UI["7f"]
+	local Frame = script.Parent.Parent.AI1
+
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = true
+	end)
+end
+task.spawn(SCRIPT_7f)
+-- // StarterGui.ScreenGui.Frame.LocalScript \\ --
+local function SCRIPT_81()
+	local script = UI["81"]
+	local UserInputService = game:GetService("UserInputService")
+
+	local gui = script.Parent
+
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+task.spawn(SCRIPT_81)
+-- // StarterGui.ScreenGui.Frame.scripts.TextLabel.UIGradient.LocalScript \\ --
+local function SCRIPT_85()
+	local script = UI["85"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_85)
+-- // StarterGui.ScreenGui.Frame.scripts.exit frame.LocalScript \\ --
+local function SCRIPT_89()
+	local script = UI["89"]
+	local imageButton = script.Parent  -- تحديد الـ ImageButton
+	local originalColor = imageButton.ImageColor3  -- حفظ اللون الأصلي للصورة
+
+	-- عند مرور الماوس على الزر
+	imageButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأبيض بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(175, 206, 255)}):Play()
+	end)
+
+	-- عند مغادرة الماوس للزر
+	imageButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = originalColor}):Play()
+	end)
+
+end
+task.spawn(SCRIPT_89)
+-- // StarterGui.ScreenGui.Frame.scripts.exit frame.LocalScript \\ --
+local function SCRIPT_8a()
+	local script = UI["8a"]
+	local Frame = script.Parent.Parent
+
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+end
+task.spawn(SCRIPT_8a)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient.LocalScript \\ --
+local function SCRIPT_92()
+	local script = UI["92"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_92)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient.LocalScript \\ --
+local function SCRIPT_96()
+	local script = UI["96"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_96)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient.LocalScript \\ --
+local function SCRIPT_99()
+	local script = UI["99"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_99)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.LocalScript \\ --
+local function SCRIPT_9a()
+	local script = UI["9a"]
+	-- الحصول على الزر
+	local button = script.Parent
+
+	-- الدالة التي سيتم تنفيذها عند النقر
+	local function executeScript()
+		button = script.Parent
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+	end
+	-- ربط الدالة مع النقر على الزر
+	button.MouseButton1Click:Connect(function()
+		executeScript()  -- تنفيذ السكربت عند النقر
+	end)
+
+end
+task.spawn(SCRIPT_9a)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient.LocalScript \\ --
+local function SCRIPT_a2()
+	local script = UI["a2"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_a2)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient.LocalScript \\ --
+local function SCRIPT_a6()
+	local script = UI["a6"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_a6)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient.LocalScript \\ --
+local function SCRIPT_a9()
+	local script = UI["a9"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_a9)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.LocalScript \\ --
+local function SCRIPT_aa()
+	local script = UI["aa"]
+	-- الحصول على الزر
+	local button = script.Parent
+
+	-- الدالة التي سيتم تنفيذها عند النقر
+	local function executeScript()
+		button = script.Parent
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-NEXT-GEN-RedZ-Hub-AUTO-DOJO-AUTO-DRAGON-AUTO-RACE-V4-31162"))()
+	end
+	-- ربط الدالة مع النقر على الزر
+	button.MouseButton1Click:Connect(function()
+		executeScript()  -- تنفيذ السكربت عند النقر
+	end)
+
+end
+task.spawn(SCRIPT_aa)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient.LocalScript \\ --
+local function SCRIPT_b1()
+	local script = UI["b1"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_b1)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient.LocalScript \\ --
+local function SCRIPT_b5()
+	local script = UI["b5"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_b5)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient.LocalScript \\ --
+local function SCRIPT_b8()
+	local script = UI["b8"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_b8)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.LocalScript \\ --
+local function SCRIPT_b9()
+	local script = UI["b9"]
+	-- الحصول على الزر
+	local button = script.Parent
+
+	-- الدالة التي سيتم تنفيذها عند النقر
+	local function executeScript()
+		button = script.Parent
+		loadstring(game:HttpGet("https://pastebin.com/raw/SwdYbxT5"))()
+	end
+	-- ربط الدالة مع النقر على الزر
+	button.MouseButton1Click:Connect(function()
+		executeScript()  -- تنفيذ السكربت عند النقر
+	end)
+
+end
+task.spawn(SCRIPT_b9)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient.LocalScript \\ --
+local function SCRIPT_c0()
+	local script = UI["c0"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_c0)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient.LocalScript \\ --
+local function SCRIPT_c4()
+	local script = UI["c4"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_c4)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient.LocalScript \\ --
+local function SCRIPT_c7()
+	local script = UI["c7"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_c7)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.LocalScript \\ --
+local function SCRIPT_c8()
+	local script = UI["c8"]
+	-- الحصول على الزر
+	local button = script.Parent
+
+	-- الدالة التي سيتم تنفيذها عند النقر
+	local function executeScript()
+		button = script.Parent
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end
+	-- ربط الدالة مع النقر على الزر
+	button.MouseButton1Click:Connect(function()
+		executeScript()  -- تنفيذ السكربت عند النقر
+	end)
+
+end
+task.spawn(SCRIPT_c8)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient.LocalScript \\ --
+local function SCRIPT_cf()
+	local script = UI["cf"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_cf)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient.LocalScript \\ --
+local function SCRIPT_d3()
+	local script = UI["d3"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_d3)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient.LocalScript \\ --
+local function SCRIPT_d6()
+	local script = UI["d6"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_d6)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.LocalScript \\ --
+local function SCRIPT_d7()
+	local script = UI["d7"]
+	-- الحصول على الزر
+	local button = script.Parent
+
+	-- الدالة التي سيتم تنفيذها عند النقر
+	local function executeScript()
+		button = script.Parent
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end
+	-- ربط الدالة مع النقر على الزر
+	button.MouseButton1Click:Connect(function()
+		executeScript()  -- تنفيذ السكربت عند النقر
+	end)
+
+end
+task.spawn(SCRIPT_d7)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient.LocalScript \\ --
+local function SCRIPT_de()
+	local script = UI["de"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_de)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient.LocalScript \\ --
+local function SCRIPT_e2()
+	local script = UI["e2"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_e2)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient.LocalScript \\ --
+local function SCRIPT_e5()
+	local script = UI["e5"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_e5)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.LocalScript \\ --
+local function SCRIPT_e6()
+	local script = UI["e6"]
+	-- الحصول على الزر
+	local button = script.Parent
+
+	-- الدالة التي سيتم تنفيذها عند النقر
+	local function executeScript()
+		button = script.Parent
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end
+	-- ربط الدالة مع النقر على الزر
+	button.MouseButton1Click:Connect(function()
+		executeScript()  -- تنفيذ السكربت عند النقر
+	end)
+
+end
+task.spawn(SCRIPT_e6)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.Frame.UIStroke.UIGradient.LocalScript \\ --
+local function SCRIPT_ed()
+	local script = UI["ed"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_ed)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.UIStroke.UIGradient.LocalScript \\ --
+local function SCRIPT_f1()
+	local script = UI["f1"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_f1)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.UIGradient.LocalScript \\ --
+local function SCRIPT_f4()
+	local script = UI["f4"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 130})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(1)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_f4)
+-- // StarterGui.ScreenGui.Frame.scripts.ScrollingFrame.ImageLabel.play script.LocalScript \\ --
+local function SCRIPT_f5()
+	local script = UI["f5"]
+	-- الحصول على الزر
+	local button = script.Parent
+
+	-- الدالة التي سيتم تنفيذها عند النقر
+	local function executeScript()
+		button = script.Parent
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptXPaid/Scripts/refs/heads/main/ScriptX%20Login"))()
+	end
+	-- ربط الدالة مع النقر على الزر
+	button.MouseButton1Click:Connect(function()
+		executeScript()  -- تنفيذ السكربت عند النقر
+	end)
+
+end
+task.spawn(SCRIPT_f5)
+-- // StarterGui.ScreenGui.Frame.AI1.ImageLabel.LocalScript \\ --
+local function SCRIPT_fa()
+	local script = UI["fa"]
+	local image = script.Parent -- تأكد أن السكربت موضوع داخل الـ ImageLabel
+	local tweenService = game:GetService("TweenService")
+
+	-- تغيير مدة الـ Tween إلى 2 ثانية لجعل الحركة أبطأ
+	local rotateTweenInfo = TweenInfo.new(0.50, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local rotateTween = tweenService:Create(image, rotateTweenInfo, {Rotation = 20})
+	local resetTween = tweenService:Create(image, rotateTweenInfo, {Rotation = -13})
+
+	image.MouseEnter:Connect(function()
+		rotateTween:Play()
+	end)
+
+	image.MouseLeave:Connect(function()
+		resetTween:Play()
+	end)
+
+end
+task.spawn(SCRIPT_fa)
+-- // StarterGui.ScreenGui.Frame.AI1.ImageLabel.LocalScript \\ --
+local function SCRIPT_fb()
+	local script = UI["fb"]
+	local imageButton = script.Parent  -- تحديد الـ ImageButton
+	local originalColor = imageButton.ImageColor3  -- حفظ اللون الأصلي للصورة
+	local glowImage = imageButton:FindFirstChild("glow")  -- البحث عن عنصر الصورة glow
+
+	-- التأكد من أن الصورة glow موجودة
+	if glowImage then
+		glowImage.ImageTransparency = 1  -- إخفاء الصورة في البداية
+	end
+
+	-- عند مرور الماوس على الزر
+	imageButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأبيض بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+
+		-- جعل صورة glow تظهر بسلاسة
+		if glowImage then
+			game:GetService("TweenService"):Create(glowImage, TweenInfo.new(0.3), {ImageTransparency = 0.68}):Play()
+		end
+	end)
+
+	-- عند مغادرة الماوس للزر
+	imageButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = originalColor}):Play()
+
+		-- إخفاء صورة glow بسلاسة
+		if glowImage then
+			game:GetService("TweenService"):Create(glowImage, TweenInfo.new(0.3), {ImageTransparency = 1}):Play()
+		end
+	end)
+
+end
+task.spawn(SCRIPT_fb)
+-- // StarterGui.ScreenGui.Frame.AI1.TextLabel.UIGradient.LocalScript \\ --
+local function SCRIPT_ff()
+	local script = UI["ff"]
+	-- الحصول على UIGradient
+	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
+
+	-- إعداد TweenService
+	local TweenService = game:GetService("TweenService")
+
+	-- إعداد TweenInfo لتحديد مدة التغيير
+	local tweenInfo = TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, -1, true)
+
+	-- إنشاء Tween لتغيير الـ Rotation
+	local tweenRotation = TweenService:Create(uiGradient, tweenInfo, {Rotation = 180})
+
+	-- تشغيل التويين داخل حلقة لانهائية
+	while true do
+		tweenRotation:Play()  -- تشغيل التويين
+		wait(3)  -- انتظر حتى ينتهي التويين الحالي
+	end
+
+
+end
+task.spawn(SCRIPT_ff)
+-- // StarterGui.ScreenGui.Frame.AI1.exit frame.LocalScript \\ --
+local function SCRIPT_102()
+	local script = UI["102"]
+	local imageButton = script.Parent  -- تحديد الـ ImageButton
+	local originalColor = imageButton.ImageColor3  -- حفظ اللون الأصلي للصورة
+
+	-- عند مرور الماوس على الزر
+	imageButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأبيض بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(175, 206, 255)}):Play()
+	end)
+
+	-- عند مغادرة الماوس للزر
+	imageButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = originalColor}):Play()
+	end)
+
+end
+task.spawn(SCRIPT_102)
+-- // StarterGui.ScreenGui.Frame.AI1.exit frame.LocalScript \\ --
+local function SCRIPT_103()
+	local script = UI["103"]
+	local Frame = script.Parent.Parent
+
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+end
+task.spawn(SCRIPT_103)
+-- // StarterGui.ScreenGui.Frame.console.LocalScript \\ --
+local function SCRIPT_107()
+	local script = UI["107"]
+	local imageButton = script.Parent  -- تحديد الـ ImageButton
+	local originalColor = imageButton.ImageColor3  -- حفظ اللون الأصلي للصورة
+	local glowImage = imageButton:FindFirstChild("glow")  -- البحث عن عنصر الصورة glow
+
+	-- التأكد من أن الصورة glow موجودة
+	if glowImage then
+		glowImage.ImageTransparency = 1  -- إخفاء الصورة في البداية
+	end
+
+	-- عند مرور الماوس على الزر
+	imageButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأبيض بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+
+		-- جعل صورة glow تظهر بسلاسة
+		if glowImage then
+			game:GetService("TweenService"):Create(glowImage, TweenInfo.new(0.3), {ImageTransparency = 0.68}):Play()
+		end
+	end)
+
+	-- عند مغادرة الماوس للزر
+	imageButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = originalColor}):Play()
+
+		-- إخفاء صورة glow بسلاسة
+		if glowImage then
+			game:GetService("TweenService"):Create(glowImage, TweenInfo.new(0.3), {ImageTransparency = 1}):Play()
+		end
+	end)
+
+end
+task.spawn(SCRIPT_107)
+-- // StarterGui.ScreenGui.Frame.console.LocalScript \\ --
+local function SCRIPT_108()
+	local script = UI["108"]
+	local Frame = script.Parent.Parent.console1
+
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = true
+	end)
+end
+task.spawn(SCRIPT_108)
+-- // StarterGui.ScreenGui.Frame.console1.ScrollingFrame.consele.LocalScript \\ --
+local function SCRIPT_10d()
+	local script = UI["10d"]
+	local consoleBox = script.Parent -- الحصول على الـ TextBox
+	consoleBox.ClearTextOnFocus = false -- منع حذف النص عند التركيز عليه
+	consoleBox.Text = [[By Oranium V3]]
+
+	-- وظيفة لإضافة النصوص إلى الكونسل
+	local function logMessage(msg)
+		local timestamp = "[" .. os.date("%X") .. "] " -- إضافة الوقت
+		consoleBox.Text = consoleBox.Text .. timestamp .. msg .. "\n"
+		consoleBox.CursorPosition = #consoleBox.Text -- النزول لآخر سطر تلقائياً
+	end
+
+	-- دالة لمعالجة كل لاعب جديد
+	local function setupPlayer(player)
+		-- تسجيل دخول اللاعب
+		logMessage("🔹 [JOIN] Player " .. player.Name .. " has joined the game.")
+
+		-- تسجيل الدردشة
+		player.Chatted:Connect(function(msg)
+			logMessage("💬 [CHAT] " .. player.Name .. ": " .. msg)
+		end)
+
+		-- تسجيل موت اللاعبين
+		player.CharacterAdded:Connect(function(character)
+			local humanoid = character:FindFirstChild("Humanoid")
+			if humanoid then
+				humanoid.Died:Connect(function()
+					logMessage("💀 [DEATH] " .. player.Name .. " has died.")
+				end)
+			end
+		end)
+
+		-- تسجيل تغييرات الأدوات (Tools)
+		player.Backpack.ChildAdded:Connect(function(child)
+			if child:IsA("Tool") then
+				logMessage("🛠️ [TOOL] " .. player.Name .. " picked up " .. child.Name)
+			end
+		end)
+
+		player.Backpack.ChildRemoved:Connect(function(child)
+			if child:IsA("Tool") then
+				logMessage("🛠️ [TOOL] " .. player.Name .. " dropped " .. child.Name)
+			end
+		end)
+
+		-- تسجيل تغييرات الفرق (Teams)
+		player:GetPropertyChangedSignal("Team"):Connect(function()
+			if player.Team then -- التحقق مما إذا كان اللاعب لديه فريق
+				logMessage("🚩 [TEAM] " .. player.Name .. " switched to " .. player.Team.Name)
+			else
+				logMessage("🚩 [TEAM] " .. player.Name .. " is now unassigned.")
+			end
+		end)
+	end
+
+	-- تسجيل دخول اللاعبين
+	game.Players.PlayerAdded:Connect(setupPlayer)
+
+	-- تسجيل خروج اللاعبين
+	game.Players.PlayerRemoving:Connect(function(player)
+		logMessage("🔸 [LEAVE] Player " .. player.Name .. " has left the game.")
+	end)
+
+	-- تسجيل حذف وإضافة الأجزاء (Parts) في Workspace
+	game.Workspace.ChildAdded:Connect(function(child)
+		if child:IsA("Part") or child:IsA("Model") then
+			logMessage("🧱 [PART] " .. child.Name .. " was added to Workspace.")
+		end
+	end)
+
+	game.Workspace.ChildRemoved:Connect(function(child)
+		if child:IsA("Part") or child:IsA("Model") then
+			logMessage("❌ [PART] " .. child.Name .. " was removed from Workspace.")
+		end
+	end)
+
+	-- تسجيل تحريك الأجزاء (Doors, Motors)
+	game.Workspace.DescendantAdded:Connect(function(descendant)
+		if descendant:IsA("HingeConstraint") or descendant:IsA("Motor") then
+			logMessage("🔄 [MOTION] " .. (descendant.Parent and descendant.Parent.Name or "Unknown") .. " is moving.")
+		end
+	end)
+
+	-- تسجيل أوامر الإداريين وأوامر print()
+	game:GetService("LogService").MessageOut:Connect(function(message, messageType)
+		if messageType == Enum.MessageType.MessageOutput then
+			logMessage("📜 [LOG] " .. message)
+		elseif messageType == Enum.MessageType.MessageWarning then
+			logMessage("⚠️ [WARNING] " .. message)
+		elseif messageType == Enum.MessageType.MessageError then
+			logMessage("❌ [ERROR] " .. message)
+		end
+	end)
+
+	logMessage("✅ Console By Oranium is now tracking all events in the game!")
+
+end
+task.spawn(SCRIPT_10d)
+-- // StarterGui.ScreenGui.Frame.console1.exit frame.LocalScript \\ --
+local function SCRIPT_111()
+	local script = UI["111"]
+	local imageButton = script.Parent  -- تحديد الـ ImageButton
+	local originalColor = imageButton.ImageColor3  -- حفظ اللون الأصلي للصورة
+
+	-- عند مرور الماوس على الزر
+	imageButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأبيض بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(175, 206, 255)}):Play()
+	end)
+
+	-- عند مغادرة الماوس للزر
+	imageButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = originalColor}):Play()
+	end)
+
+end
+task.spawn(SCRIPT_111)
+-- // StarterGui.ScreenGui.Frame.console1.exit frame.LocalScript \\ --
+local function SCRIPT_112()
+	local script = UI["112"]
+	local Frame = script.Parent.Parent
+
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+end
+task.spawn(SCRIPT_112)
+-- // StarterGui.ScreenGui.LocalScript \\ --
+local function SCRIPT_115()
+	local script = UI["115"]
+	local screenGui = script.Parent -- تأكد أن هذا السكربت داخل الـ ScreenGui
+	local toggleKey = Enum.KeyCode.K -- المفتاح الذي ستضغط عليه للتبديل بين الظهور والاختفاء
+
+	-- دالة لتبديل ظهور الـ ScreenGui
+	local function toggleGui()
+		screenGui.Enabled = not screenGui.Enabled
+	end
+
+	-- حدث الضغط على المفتاح
+	game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
+		if gameProcessed then return end -- تجاهل إذا كانت اللعبة تتعامل مع المدخلات
+		if input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == toggleKey then
+			toggleGui()
+		end
+	end)
+
+end
+task.spawn(SCRIPT_115)
+-- // StarterGui.ScreenGui.toggle.LocalScript \\ --
+local function SCRIPT_119()
+	local script = UI["119"]
+	local imageButton = script.Parent  -- تحديد الـ ImageButton
+	local originalColor = imageButton.ImageColor3  -- حفظ اللون الأصلي للصورة
+	local glowImage = imageButton:FindFirstChild("glow")  -- البحث عن عنصر الصورة glow
+
+	-- التأكد من أن الصورة glow موجودة
+	if glowImage then
+		glowImage.ImageTransparency = 1  -- إخفاء الصورة في البداية
+	end
+
+	-- عند مرور الماوس على الزر
+	imageButton.MouseEnter:Connect(function()
+		-- تغيير اللون إلى الأبيض بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+
+		-- جعل صورة glow تظهر بسلاسة
+		if glowImage then
+			game:GetService("TweenService"):Create(glowImage, TweenInfo.new(0.3), {ImageTransparency = 0}):Play()
+		end
+	end)
+
+	-- عند مغادرة الماوس للزر
+	imageButton.MouseLeave:Connect(function()
+		-- العودة إلى اللون الأصلي بسلاسة
+		game:GetService("TweenService"):Create(imageButton, TweenInfo.new(0.3), {ImageColor3 = originalColor}):Play()
+
+		-- إخفاء صورة glow بسلاسة
+		if glowImage then
+			game:GetService("TweenService"):Create(glowImage, TweenInfo.new(0.3), {ImageTransparency = 1}):Play()
+		end
+	end)
+
+end
+task.spawn(SCRIPT_119)
+-- // StarterGui.ScreenGui.toggle.LocalScript \\ --
+local function SCRIPT_11b()
+	local script = UI["11b"]
+	local UserInputService = game:GetService("UserInputService")
+
+	local gui = script.Parent
+
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+task.spawn(SCRIPT_11b)
+-- // StarterGui.ScreenGui.toggle.LocalScript \\ --
+local function SCRIPT_11c()
+	local script = UI["11c"]
+	local frame = script.Parent.Parent:FindFirstChild("Frame") -- تأكد أن Frame داخل نفس Parent مثل الزر
+	local button = script.Parent -- الزر الذي سيتم النقر عليه
+
+	button.MouseButton1Click:Connect(function()
+		if frame then
+			frame.Visible = not frame.Visible -- تبديل حالة الظهور
+		end
+	end)
+
+end
+task.spawn(SCRIPT_11c)
+
+return UI["1"], require;
