@@ -1,127 +1,114 @@
+-- // GUI TO LUA \\ --
 
--- Instances: 15 | Scripts: 8 | Modules: 0 | Tags: 0
-local G2L = {};
+-- // INSTANCES: 15 | SCRIPTS: 8 | MODULES: 0 \\ --
 
--- StarterGui.ScreenGui
-G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+local UI = {}
 
-
-
--- StarterGui.ScreenGui.ImageLabel
-G2L["2"] = Instance.new("ImageLabel", G2L["1"]);
-G2L["2"]["BorderSizePixel"] = 0;
-G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2"]["ImageColor3"] = Color3.fromRGB(209, 209, 209);
-G2L["2"]["Image"] = [[rbxassetid://96405064299686]];
-G2L["2"]["Size"] = UDim2.new(0, 675, 0, 365);
-G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["BackgroundTransparency"] = 1;
-G2L["2"]["Position"] = UDim2.new(0.19678, 0, 0.21745, 0);
+-- // StarterGui.ScreenGui \\ --
+UI["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
 
 
--- StarterGui.ScreenGui.ImageLabel.LocalScript
-G2L["3"] = Instance.new("LocalScript", G2L["2"]);
+-- // StarterGui.ScreenGui.ImageLabel \\ --
+UI["2"] = Instance.new("ImageLabel", UI["1"])
+UI["2"]["BorderSizePixel"] = 0
+UI["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2"]["ImageColor3"] = Color3.fromRGB(209, 209, 209)
+UI["2"]["Image"] = [[rbxassetid://96405064299686]]
+UI["2"]["Size"] = UDim2.new(0.57203, 0, 0.45398, 0)
+UI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2"]["BackgroundTransparency"] = 1
+UI["2"]["Position"] = UDim2.new(0.21352, 0, 0.27091, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.LocalScript \\ --
+UI["3"] = Instance.new("LocalScript", UI["2"])
 
 
+-- // StarterGui.ScreenGui.ImageLabel.TextLabel \\ --
+UI["4"] = Instance.new("TextLabel", UI["2"])
+UI["4"]["TextWrapped"] = true
+UI["4"]["BorderSizePixel"] = 0
+UI["4"]["TextScaled"] = true
+UI["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4"]["TextSize"] = 14
+UI["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4"]["BackgroundTransparency"] = 1
+UI["4"]["Size"] = UDim2.new(0.47111, 0, 0.18904, 0)
+UI["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4"]["Text"] = [[Wellcome Back ]]
+UI["4"]["Position"] = UDim2.new(0.27843, 0, 0.14815, 0)
 
--- StarterGui.ScreenGui.ImageLabel.TextLabel
-G2L["4"] = Instance.new("TextLabel", G2L["2"]);
-G2L["4"]["TextWrapped"] = true;
-G2L["4"]["BorderSizePixel"] = 0;
-G2L["4"]["TextSize"] = 14;
-G2L["4"]["TextScaled"] = true;
-G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4"]["BackgroundTransparency"] = 1;
-G2L["4"]["Size"] = UDim2.new(0, 318, 0, 69);
-G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4"]["Text"] = [[Wellcome Back ]];
-G2L["4"]["Position"] = UDim2.new(0.27843, 0, 0.14815, 0);
-
-
--- StarterGui.ScreenGui.ImageLabel.TextLabel.LocalScript
-G2L["5"] = Instance.new("LocalScript", G2L["4"]);
+-- // StarterGui.ScreenGui.ImageLabel.TextLabel.LocalScript \\ --
+UI["5"] = Instance.new("LocalScript", UI["4"])
 
 
+-- // StarterGui.ScreenGui.ImageLabel.Frame \\ --
+UI["6"] = Instance.new("Frame", UI["2"])
+UI["6"]["BorderSizePixel"] = 0
+UI["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6"]["Size"] = UDim2.new(0.00444, 0, 0.13151, 0)
+UI["6"]["Position"] = UDim2.new(0.73778, 0, 0.18356, 0)
+UI["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 
--- StarterGui.ScreenGui.ImageLabel.Frame
-G2L["6"] = Instance.new("Frame", G2L["2"]);
-G2L["6"]["BorderSizePixel"] = 0;
-G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6"]["Size"] = UDim2.new(0, 3, 0, 48);
-G2L["6"]["Position"] = UDim2.new(0.73778, 0, 0.18356, 0);
-G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-
-
--- StarterGui.ScreenGui.ImageLabel.Frame.LocalScript
-G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+-- // StarterGui.ScreenGui.ImageLabel.Frame.LocalScript \\ --
+UI["7"] = Instance.new("LocalScript", UI["6"])
 
 
-
--- StarterGui.ScreenGui.ImageLabel.Frame.LocalScript
-G2L["8"] = Instance.new("LocalScript", G2L["6"]);
-
+-- // StarterGui.ScreenGui.ImageLabel.Frame.LocalScript \\ --
+UI["8"] = Instance.new("LocalScript", UI["6"])
 
 
--- StarterGui.ScreenGui.ImageLabel.Frame
-G2L["9"] = Instance.new("Frame", G2L["2"]);
-G2L["9"]["BorderSizePixel"] = 0;
-G2L["9"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
-G2L["9"]["Size"] = UDim2.new(0, 675, 0, 60);
-G2L["9"]["Position"] = UDim2.new(-0.00053, 0, 0.83413, 0);
-G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9"]["BackgroundTransparency"] = 0.1;
+-- // StarterGui.ScreenGui.ImageLabel.Frame \\ --
+UI["9"] = Instance.new("Frame", UI["2"])
+UI["9"]["BorderSizePixel"] = 0
+UI["9"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23)
+UI["9"]["Size"] = UDim2.new(1, 0, 0.16438, 0)
+UI["9"]["Position"] = UDim2.new(-0.00053, 0, 0.83413, 0)
+UI["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9"]["BackgroundTransparency"] = 0.1
+
+-- // StarterGui.ScreenGui.ImageLabel.Frame.ImageLabel \\ --
+UI["a"] = Instance.new("ImageLabel", UI["9"])
+UI["a"]["BorderSizePixel"] = 0
+UI["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a"]["Image"] = [[rbxassetid://70831056049032]]
+UI["a"]["Size"] = UDim2.new(0.1037, 0, 1.13333, 0)
+UI["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a"]["BackgroundTransparency"] = 1
+UI["a"]["Position"] = UDim2.new(0.43736, 0, -0.08085, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Frame.ImageLabel.LocalScript \\ --
+UI["b"] = Instance.new("LocalScript", UI["a"])
 
 
--- StarterGui.ScreenGui.ImageLabel.Frame.ImageLabel
-G2L["a"] = Instance.new("ImageLabel", G2L["9"]);
-G2L["a"]["BorderSizePixel"] = 0;
-G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a"]["Image"] = [[rbxassetid://70831056049032]];
-G2L["a"]["Size"] = UDim2.new(0, 70, 0, 68);
-G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a"]["BackgroundTransparency"] = 1;
-G2L["a"]["Position"] = UDim2.new(0.43736, 0, -0.08085, 0);
+-- // StarterGui.ScreenGui.ImageLabel.Frame.ImageLabel.LocalScript \\ --
+UI["c"] = Instance.new("LocalScript", UI["a"])
 
 
--- StarterGui.ScreenGui.ImageLabel.Frame.ImageLabel.LocalScript
-G2L["b"] = Instance.new("LocalScript", G2L["a"]);
+-- // StarterGui.ScreenGui.ImageLabel.Frame.LocalScript \\ --
+UI["d"] = Instance.new("LocalScript", UI["9"])
 
 
+-- // StarterGui.ScreenGui.ImageLabel.TextLabel \\ --
+UI["e"] = Instance.new("TextLabel", UI["2"])
+UI["e"]["BorderSizePixel"] = 0
+UI["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e"]["TextSize"] = 14
+UI["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e"]["BackgroundTransparency"] = 1
+UI["e"]["Size"] = UDim2.new(0.18074, 0, 0.05479, 0)
+UI["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e"]["Text"] = [[Oranium]]
+UI["e"]["Position"] = UDim2.new(-0.03099, 0, -0.00002, 0)
 
--- StarterGui.ScreenGui.ImageLabel.Frame.ImageLabel.LocalScript
-G2L["c"] = Instance.new("LocalScript", G2L["a"]);
-
-
-
--- StarterGui.ScreenGui.ImageLabel.Frame.LocalScript
-G2L["d"] = Instance.new("LocalScript", G2L["9"]);
-
-
-
--- StarterGui.ScreenGui.ImageLabel.TextLabel
-G2L["e"] = Instance.new("TextLabel", G2L["2"]);
-G2L["e"]["BorderSizePixel"] = 0;
-G2L["e"]["TextSize"] = 14;
-G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e"]["BackgroundTransparency"] = 1;
-G2L["e"]["Size"] = UDim2.new(0, 122, 0, 20);
-G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e"]["Text"] = [[Oranium]];
-G2L["e"]["Position"] = UDim2.new(-0.03099, 0, -0.00002, 0);
+-- // StarterGui.ScreenGui.ImageLabel.TextLabel.LocalScript \\ --
+UI["f"] = Instance.new("LocalScript", UI["e"])
 
 
--- StarterGui.ScreenGui.ImageLabel.TextLabel.LocalScript
-G2L["f"] = Instance.new("LocalScript", G2L["e"]);
-
-
-
--- StarterGui.ScreenGui.ImageLabel.LocalScript
-local function C_3()
-local script = G2L["3"];
+-- // StarterGui.ScreenGui.ImageLabel.LocalScript \\ --
+local function SCRIPT_3()
+local script = UI["3"]
 	local imageLabel = script.Parent
 	local tweenService = game:GetService("TweenService")
 	
@@ -145,11 +132,11 @@ local script = G2L["3"];
 	disappearTween:Play()
 	disappearTween.Completed:Wait()
 	
-end;
-task.spawn(C_3);
--- StarterGui.ScreenGui.ImageLabel.TextLabel.LocalScript
-local function C_5()
-local script = G2L["5"];
+end
+task.spawn(SCRIPT_3)
+-- // StarterGui.ScreenGui.ImageLabel.TextLabel.LocalScript \\ --
+local function SCRIPT_5()
+local script = UI["5"]
 	local textLabel = script.Parent
 	local tweenService = game:GetService("TweenService")
 	
@@ -169,11 +156,11 @@ local script = G2L["5"];
 	disappearTween:Play()
 	disappearTween.Completed:Wait()
 	
-end;
-task.spawn(C_5);
--- StarterGui.ScreenGui.ImageLabel.Frame.LocalScript
-local function C_7()
-local script = G2L["7"];
+end
+task.spawn(SCRIPT_5)
+-- // StarterGui.ScreenGui.ImageLabel.Frame.LocalScript \\ --
+local function SCRIPT_7()
+local script = UI["7"]
 	local frame = script.Parent
 	
 	while true do
@@ -181,11 +168,11 @@ local script = G2L["7"];
 		task.wait(0.5) -- الانتظار نصف ثانية
 	end
 	
-end;
-task.spawn(C_7);
--- StarterGui.ScreenGui.ImageLabel.Frame.LocalScript
-local function C_8()
-local script = G2L["8"];
+end
+task.spawn(SCRIPT_7)
+-- // StarterGui.ScreenGui.ImageLabel.Frame.LocalScript \\ --
+local function SCRIPT_8()
+local script = UI["8"]
 	local frame = script.Parent
 	local tweenService = game:GetService("TweenService")
 	
@@ -205,11 +192,11 @@ local script = G2L["8"];
 	disappearTween:Play()
 	disappearTween.Completed:Wait()
 	
-end;
-task.spawn(C_8);
--- StarterGui.ScreenGui.ImageLabel.Frame.ImageLabel.LocalScript
-local function C_b()
-local script = G2L["b"];
+end
+task.spawn(SCRIPT_8)
+-- // StarterGui.ScreenGui.ImageLabel.Frame.ImageLabel.LocalScript \\ --
+local function SCRIPT_b()
+local script = UI["b"]
 	local image = script.Parent
 	local runService = game:GetService("RunService")
 	
@@ -219,11 +206,11 @@ local script = G2L["b"];
 		image.Rotation = image.Rotation + rotationSpeed
 	end)
 	
-end;
-task.spawn(C_b);
--- StarterGui.ScreenGui.ImageLabel.Frame.ImageLabel.LocalScript
-local function C_c()
-local script = G2L["c"];
+end
+task.spawn(SCRIPT_b)
+-- // StarterGui.ScreenGui.ImageLabel.Frame.ImageLabel.LocalScript \\ --
+local function SCRIPT_c()
+local script = UI["c"]
 	local imageLabel = script.Parent
 	local tweenService = game:GetService("TweenService")
 	
@@ -243,11 +230,11 @@ local script = G2L["c"];
 	disappearTween:Play()
 	disappearTween.Completed:Wait()
 	
-end;
-task.spawn(C_c);
--- StarterGui.ScreenGui.ImageLabel.Frame.LocalScript
-local function C_d()
-local script = G2L["d"];
+end
+task.spawn(SCRIPT_c)
+-- // StarterGui.ScreenGui.ImageLabel.Frame.LocalScript \\ --
+local function SCRIPT_d()
+local script = UI["d"]
 	local frame = script.Parent
 	local tweenService = game:GetService("TweenService")
 	
@@ -267,11 +254,11 @@ local script = G2L["d"];
 	disappearTween:Play()
 	disappearTween.Completed:Wait()
 	
-end;
-task.spawn(C_d);
--- StarterGui.ScreenGui.ImageLabel.TextLabel.LocalScript
-local function C_f()
-local script = G2L["f"];
+end
+task.spawn(SCRIPT_d)
+-- // StarterGui.ScreenGui.ImageLabel.TextLabel.LocalScript \\ --
+local function SCRIPT_f()
+local script = UI["f"]
 	local textLabel = script.Parent
 	local tweenService = game:GetService("TweenService")
 	
@@ -291,7 +278,7 @@ local script = G2L["f"];
 	disappearTween:Play()
 	disappearTween.Completed:Wait()
 	
-end;
-task.spawn(C_f);
+end
+task.spawn(SCRIPT_f)
 
-return G2L["1"], require;
+return UI["1"], require;
